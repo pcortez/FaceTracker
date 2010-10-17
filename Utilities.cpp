@@ -599,16 +599,12 @@ bool searchFace(const Mat& src, RotatedRect rect){
 	else return false;
 }
 
-RotatedRect searchFace(const Mat& src, GenericModel *model, cv::Size2f scaleFactor){
+RotatedRect searchFace(Mat& src, GenericModel *model, cv::Size2f scaleFactor, bool draw){
 	
 	GenericFeature *minFeature;
-	Mat auxImg2 = src.clone();
-	Mat auxImg = resizeImg(auxImg2, 240, 180);
-	auxImg2.release();
-	bool draw = false;
-	if (draw) auxImg2 = auxImg.clone();
+	Mat auxImg = resizeImg(src, scaleFactor.width*src.size().width, scaleFactor.height*src.size().height);
+	Mat auxImg2 = auxImg.clone();
 	
-
 	CvHaarClassifierCascade* cascade = (CvHaarClassifierCascade*) cvLoad (CASCADE_NAME, 0, 0, 0);
     CvMemStorage* storage = cvCreateMemStorage(0);
     assert (storage);
@@ -709,8 +705,9 @@ RotatedRect searchFace(const Mat& src, GenericModel *model, cv::Size2f scaleFact
 		imshow( "ROI", auxImg2);
 		cvWaitKey();
 		cvDestroyWindow("ROI");
-		auxImg2.release();
 	}
+	auxImg2.release();
+	auxImg.release();
 	
 	cvReleaseImage(&gray_image);
 	

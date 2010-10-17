@@ -64,7 +64,7 @@ Point2f getAreaCenter(RotatedRect& rect, int indx);
 cv::Rect getBoundingRect(RotatedRect rect);
 
 bool searchFace(const Mat& src, RotatedRect rect);
-RotatedRect searchFace(const Mat& src, GenericModel *model, cv::Size2f scaleFactor);
+RotatedRect searchFace(Mat& src, GenericModel *model, cv::Size2f scaleFactor, bool draw);
 
 //se podria dejer como un int o unsigned int, pero la funcion opencv acepta doubles
 //como son milisegundos me aseguro tener un max value grande con el long

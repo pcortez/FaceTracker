@@ -131,7 +131,7 @@ int main (int argc, char * const argv[]){
 			rectSmall = scaleRect(param[i].initialRect, scaleFactor);
 		}
 		else {
-			param[i].initialRect = searchFace(OriginalFrame,TrackingModel_P,scaleFactor);
+			param[i].initialRect = searchFace(OriginalFrame,TrackingModel_P,scaleFactor, false);
 			rectSmall = scaleRect(param[i].initialRect, scaleFactor);
 			//et_P->updateVariables(rectSmall);
 			//et_P->update(miniFrame);
