@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D7DBE8E0C04A90C00D8835D /* FaceTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */; };
+		8009845D115406BE00B9C823 /* ExhaustiveTracking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8009845C115406BE00B9C823 /* ExhaustiveTracking.cpp */; };
+		800A961F1240232000B2978D /* TimeQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 800A961E1240232000B2978D /* TimeQueue.cpp */; };
+		8024662A115015DF005903CD /* GenericParticleFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80246629115015DF005903CD /* GenericParticleFilter.cpp */; };
+		8061785211529616000E19D0 /* RandomUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8061785111529616000E19D0 /* RandomUtilities.cpp */; };
+		8070183410E2AF2C00B87C12 /* saliency.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8070183210E2AF2C00B87C12 /* saliency.cpp */; };
+		80A0AC571187A6EF00269455 /* CondensationTracking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80A0AC561187A6EF00269455 /* CondensationTracking.cpp */; };
+		80BA08B8114825240083952D /* OpenCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80BA08B7114825240083952D /* OpenCV.framework */; };
+		80C4E17F10BF5DCE0097DD3B /* LogEuclideanMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80C4E17D10BF5DCE0097DD3B /* LogEuclideanMath.cpp */; };
+		80D1FD0910EA9E4F0073E4D9 /* Utilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D1FD0810EA9E4F0073E4D9 /* Utilities.cpp */; };
+		80F0AA5C11514C0C00B7A6AC /* CovarianceFull.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80F0AA5B11514C0C00B7A6AC /* CovarianceFull.cpp */; };
+		80F0AA6F11514EAE00B7A6AC /* CovariancePatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80F0AA6E11514EAE00B7A6AC /* CovariancePatch.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4D7DBE8F0C04A93300D8835D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FaceTracker.cpp; sourceTree = "<group>"; };
+		4D4CDBCC0C0630060001A8A2 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		4D7DBE570C04A8FF00D8835D /* FaceTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D7DBE590C04A8FF00D8835D /* FaceTracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FaceTracker-Info.plist"; sourceTree = "<group>"; };
+		8009845B115406BE00B9C823 /* ExhaustiveTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExhaustiveTracking.h; sourceTree = "<group>"; };
+		8009845C115406BE00B9C823 /* ExhaustiveTracking.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExhaustiveTracking.cpp; sourceTree = "<group>"; };
+		800A961D1240232000B2978D /* TimeQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeQueue.h; sourceTree = "<group>"; };
+		800A961E1240232000B2978D /* TimeQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeQueue.cpp; sourceTree = "<group>"; };
+		80246628115015DF005903CD /* GenericParticleFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericParticleFilter.h; sourceTree = "<group>"; };
+		80246629115015DF005903CD /* GenericParticleFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GenericParticleFilter.cpp; sourceTree = "<group>"; };
+		802F14701225DA2500D219FE /* configStruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = configStruct.h; sourceTree = "<group>"; };
+		8061785011529616000E19D0 /* RandomUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomUtilities.h; sourceTree = "<group>"; };
+		8061785111529616000E19D0 /* RandomUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RandomUtilities.cpp; sourceTree = "<group>"; };
+		8070183210E2AF2C00B87C12 /* saliency.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = saliency.cpp; sourceTree = "<group>"; };
+		8070183310E2AF2C00B87C12 /* saliency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = saliency.h; sourceTree = "<group>"; };
+		80A0AC551187A6EF00269455 /* CondensationTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CondensationTracking.h; sourceTree = "<group>"; };
+		80A0AC561187A6EF00269455 /* CondensationTracking.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CondensationTracking.cpp; sourceTree = "<group>"; };
+		80BA08B7114825240083952D /* OpenCV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCV.framework; path = /System/Library/Frameworks/OpenCV.framework; sourceTree = "<absolute>"; };
+		80C4E17D10BF5DCE0097DD3B /* LogEuclideanMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LogEuclideanMath.cpp; sourceTree = "<group>"; };
+		80C4E17E10BF5DCE0097DD3B /* LogEuclideanMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogEuclideanMath.h; sourceTree = "<group>"; };
+		80D1FD0710EA9E4F0073E4D9 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		80D1FD0810EA9E4F0073E4D9 /* Utilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utilities.cpp; sourceTree = "<group>"; };
+		80F0A975115136B000B7A6AC /* Generic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Generic.h; sourceTree = "<group>"; };
+		80F0AA5A11514C0C00B7A6AC /* CovarianceFull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CovarianceFull.h; sourceTree = "<group>"; };
+		80F0AA5B11514C0C00B7A6AC /* CovarianceFull.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CovarianceFull.cpp; sourceTree = "<group>"; };
+		80F0AA6D11514EAE00B7A6AC /* CovariancePatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CovariancePatch.h; sourceTree = "<group>"; };
+		80F0AA6E11514EAE00B7A6AC /* CovariancePatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CovariancePatch.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D7DBE550C04A8FF00D8835D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80BA08B8114825240083952D /* OpenCV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* FrameworkTest */ = {
+			isa = PBXGroup;
+			children = (
+				4D4CDBCC0C0630060001A8A2 /* README.txt */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				4DBF872C0C0572BC00880673 /* Resources */,
+				4D9D40B00C04AC1600EEFFD0 /* Frameworks */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = FrameworkTest;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				806178331152947B000E19D0 /* Utilities */,
+				80246627115015C7005903CD /* Tracking */,
+				8024656F114FEC69005903CD /* Features */,
+				08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D7DBE570C04A8FF00D8835D /* FaceTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D9D40B00C04AC1600EEFFD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80BA08B7114825240083952D /* OpenCV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DBF872C0C0572BC00880673 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D7DBE590C04A8FF00D8835D /* FaceTracker-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8024656F114FEC69005903CD /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				80F0A975115136B000B7A6AC /* Generic.h */,
+				80F0AA5A11514C0C00B7A6AC /* CovarianceFull.h */,
+				80F0AA5B11514C0C00B7A6AC /* CovarianceFull.cpp */,
+				80F0AA6D11514EAE00B7A6AC /* CovariancePatch.h */,
+				80F0AA6E11514EAE00B7A6AC /* CovariancePatch.cpp */,
+			);
+			name = Features;
+			sourceTree = "<group>";
+		};
+		80246627115015C7005903CD /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				80246628115015DF005903CD /* GenericParticleFilter.h */,
+				80246629115015DF005903CD /* GenericParticleFilter.cpp */,
+				8009845B115406BE00B9C823 /* ExhaustiveTracking.h */,
+				8009845C115406BE00B9C823 /* ExhaustiveTracking.cpp */,
+				80A0AC551187A6EF00269455 /* CondensationTracking.h */,
+				80A0AC561187A6EF00269455 /* CondensationTracking.cpp */,
+			);
+			name = Tracking;
+			sourceTree = "<group>";
+		};
+		806178331152947B000E19D0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				80D1FD0710EA9E4F0073E4D9 /* Utilities.h */,
+				80D1FD0810EA9E4F0073E4D9 /* Utilities.cpp */,
+				80C4E17E10BF5DCE0097DD3B /* LogEuclideanMath.h */,
+				80C4E17D10BF5DCE0097DD3B /* LogEuclideanMath.cpp */,
+				8070183210E2AF2C00B87C12 /* saliency.cpp */,
+				8070183310E2AF2C00B87C12 /* saliency.h */,
+				8061785011529616000E19D0 /* RandomUtilities.h */,
+				8061785111529616000E19D0 /* RandomUtilities.cpp */,
+				802F14701225DA2500D219FE /* configStruct.h */,
+				800A961D1240232000B2978D /* TimeQueue.h */,
+				800A961E1240232000B2978D /* TimeQueue.cpp */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D7DBE560C04A8FF00D8835D /* FaceTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D7DBE5A0C04A8FF00D8835D /* Build configuration list for PBXNativeTarget "FaceTracker" */;
+			buildPhases = (
+				4D7DBE530C04A8FF00D8835D /* Resources */,
+				4D7DBE540C04A8FF00D8835D /* Sources */,
+				4D7DBE550C04A8FF00D8835D /* Frameworks */,
+				4D7DBE8F0C04A93300D8835D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceTracker;
+			productName = FaceTracker;
+			productReference = 4D7DBE570C04A8FF00D8835D /* FaceTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "FaceTracker" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* FrameworkTest */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D7DBE560C04A8FF00D8835D /* FaceTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D7DBE530C04A8FF00D8835D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D7DBE540C04A8FF00D8835D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D7DBE8E0C04A90C00D8835D /* FaceTracker.cpp in Sources */,
+				80C4E17F10BF5DCE0097DD3B /* LogEuclideanMath.cpp in Sources */,
+				8070183410E2AF2C00B87C12 /* saliency.cpp in Sources */,
+				80D1FD0910EA9E4F0073E4D9 /* Utilities.cpp in Sources */,
+				8024662A115015DF005903CD /* GenericParticleFilter.cpp in Sources */,
+				80F0AA5C11514C0C00B7A6AC /* CovarianceFull.cpp in Sources */,
+				80F0AA6F11514EAE00B7A6AC /* CovariancePatch.cpp in Sources */,
+				8061785211529616000E19D0 /* RandomUtilities.cpp in Sources */,
+				8009845D115406BE00B9C823 /* ExhaustiveTracking.cpp in Sources */,
+				80A0AC571187A6EF00269455 /* CondensationTracking.cpp in Sources */,
+				800A961F1240232000B2978D /* TimeQueue.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+		4D7DBE5B0C04A8FF00D8835D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../opencv\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../../..\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../projects/OpenCV-2.0.0\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = "FaceTracker-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = FaceTracker;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		4D7DBE5C0C04A8FF00D8835D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../opencv\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../../..\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../projects/OpenCV-2.0.0\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = "FaceTracker-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = FaceTracker;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "FaceTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D7DBE5A0C04A8FF00D8835D /* Build configuration list for PBXNativeTarget "FaceTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D7DBE5B0C04A8FF00D8835D /* Debug */,
+				4D7DBE5C0C04A8FF00D8835D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
