@@ -12,7 +12,6 @@
 
 
 const CFIndex CASCADE_NAME_LEN = 2048;
-//SOLO PARA PRUEBAS RAPIDAS
 char  CASCADE_NAME[CASCADE_NAME_LEN] = "./haarcascades/haarcascade_frontalface_alt.xml";
 char  CASCADE_NAME_PROFILE[CASCADE_NAME_LEN] = "./haarcascades/haarcascade_profileface.xml";
 
@@ -421,79 +420,10 @@ RotatedRect scaleRect(const RotatedRect rect, const cv::Size2f scale){
 					   rect.angle);
 }
 
-Mat resizeImg(Mat& img, const int width, const int height){
-	Mat Msmall(height,width ,img.type()); 
-	resize(img, Msmall,Msmall.size());
-	
-	return Msmall;
-	
-}
-
 string CreatefileNameString(){
 	std::stringstream out;
 	out << rand();
 	return out.str()+".jpeg";
-}
-
-vector<float> normalizeVector(const vector<float>& src){
-	
-	float sum = 0;
-	vector<float> dsp(src.size(),0.0f);
-	for (int i=0; src.size(); i++) sum += src[i];
-	for (int i=0; src.size(); i++) dsp[i] = src[i]/(sum+1e-6);
-	
-	return dsp;		
-}
-vector<double> normalizeVector(const vector<double>& src){
-	
-	double sum = 0;
-	vector<double> dsp(src.size(), 0.0);
-	for (int i=0; src.size(); i++) sum += src[i];
-	for (int i=0; src.size(); i++) dsp[i] = src[i]/(sum+1e-6);
-	
-	return dsp;
-}
-
-float meanVector(const vector<float>& src){
-	
-	float sum = 0;
-	for (int i=0; i<src.size(); i++) sum += src[i];
-	return sum/src.size();		
-}
-double meanVector(const vector<double>& src){
-	
-	double sum = 0;
-	for (int i=0; i<src.size(); i++) sum += src[i];	
-	return sum/src.size();	
-}
-double varianceVector(const vector<double>& src, float mu){
-	
-	double sum = 0;
-	for (int i=0; i<src.size(); i++) sum += pow(src[i]-mu,2);	
-	return sqrt(sum/src.size());	
-}
-float varianceVector(const vector<float>& src, float mu){
-	
-	float sum = 0;
-	for (int i=0; i<src.size(); i++) sum += pow(src[i]-mu,2);	
-	return sqrt(sum/src.size());	
-}
-Mat upperWeightedMat(const Mat& src){
-	CV_Assert(src.rows==src.cols);
-	Mat srcVec((src.rows*(src.rows+1))/2,1,src.type());
-	int indx = 0;
-	
-	for (int rows = 0; rows < src.rows; rows++) {
-		for(int cols = 0; cols < src.cols; cols++){
-			if (rows<=cols) {
-				double* srcVec_i = srcVec.ptr<double>(indx);
-				srcVec_i[0] = (rows==cols ? src.at<double>(rows,cols) : src.at<double>(rows,cols)*sqrt(2));
-				indx++;
-			}
-		}
-	}
-	
-	return srcVec;
 }
 
 //el indx dice que zona es, indx = 1...4

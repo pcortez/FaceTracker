@@ -1,4 +1,4 @@
-FaceTracker/REAME.txt
+FaceTracker/README.txt
 2010-10-18, Pedro Cortez <pcortez@gmail.com>
 
 MAIN ARG
@@ -21,6 +21,6 @@ FACE // si es cara - se puede poner PEDESTRIAN
 1 //1 = si son imagenes RGB - 0= BW 
 30 // la memoria del modelo - dejalo en 30 
 0// alpha = factor de ponderacion de la posicion de los cuadrantes muestreados - si estas usando nuestros videos usa 0 pero puedes poner del orden de 0.05
-2.5 // espacio de caunto busca en el tracking la formula es x+x-width/2.5
+2.5 // espacio de caunto busca en el tracking la formula es x+x-width/2.5 - en el caso que sea 0 busca en todo el patch
 0.9,1,1.3 // las escalas que prueba el tracking
 0// los angulos que prueba el tracking

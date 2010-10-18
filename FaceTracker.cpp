@@ -99,7 +99,7 @@ int main (int argc, char * const argv[]){
 		
 	const double widthSmall = 240;
 	const double heightSmall = 180;
-	const int outTreshold = 3;
+	const int outTreshold = 1;
 	
     cvNamedWindow(WINDOW_NAME,CV_WINDOW_AUTOSIZE);
 	
@@ -114,7 +114,6 @@ int main (int argc, char * const argv[]){
 	//out box
 	int countRectOut = 0;
 	
-	//no usamos el fps que dice que tiene el video porque esta malo, es de 30 pero dice que es de 25
 	VideoWriter video(param[0].videoPath+".avi",CV_FOURCC('D', 'I', 'V', 'X'), cap[0].get(CV_CAP_PROP_FPS) , OriginalFrame.size());
 	RotatedRect rectS,rectSmall;
 	
@@ -123,14 +122,15 @@ int main (int argc, char * const argv[]){
 		countRectOut = 0;
 		cap[i] >> OriginalFrame;
 		DrawFrame = OriginalFrame.clone();
-		miniFrame = resizeImg(OriginalFrame, widthSmall, heightSmall);
+		//miniFrame = resizeImg(OriginalFrame, widthSmall, heightSmall);
+		resize(OriginalFrame, miniFrame,cv::Size2i(widthSmall,heightSmall));
 		cv::Size2f scaleFactor(widthSmall/OriginalFrame.size().width,heightSmall/OriginalFrame.size().height);
 		
 		if (i==0){
 			rectSmall = scaleRect(param[i].initialRect, scaleFactor);
 		}
 		else {
-			param[i].initialRect = searchFace(OriginalFrame,TrackingModel_P,scaleFactor, false);
+			param[i].initialRect = searchFace(OriginalFrame,TrackingModel_P,scaleFactor, true);
 			rectSmall = scaleRect(param[i].initialRect, scaleFactor);
 			//et_P->updateVariables(rectSmall);
 			//et_P->update(miniFrame);
@@ -146,13 +146,14 @@ int main (int argc, char * const argv[]){
 		TrackingModel_P = new CovariancePatchModelv2(miniFrame, rectSmall, &param[i]);
 		et_P = new ExhaustiveTracking(TrackingModel_P, miniFrame, &param[i]);
 		
-		while (cap[i].get(CV_CAP_PROP_POS_MSEC)<=param[i].endMsec) {
+		while (cap[i].get(CV_CAP_PROP_POS_MSEC)<=param[i].endMsec && cvWaitKey(1)!=27) {
 			double t = (double)getTickCount();
-			
+
 			Mat auxPatch;
 			cap[i] >> OriginalFrame;
 			DrawFrame = OriginalFrame.clone();
-			miniFrame = resizeImg(OriginalFrame, widthSmall, heightSmall);
+			//miniFrame = resizeImg(OriginalFrame, widthSmall, heightSmall);
+			resize(OriginalFrame, miniFrame,cv::Size2i(widthSmall,heightSmall));
 			et_P->update(miniFrame);
 			double prob2 = et_P->getNextPosition(rectS, cap[i].get(CV_CAP_PROP_FPS));
 			
@@ -207,7 +208,8 @@ int main (int argc, char * const argv[]){
 	ofstream myfile;
 	string path = param[0].videoPath.substr(0, param[0].videoPath.find_last_of("/")+1) +"final_queue_waiting_time.txt"; 
 	myfile.open (path.c_str(), ios::trunc);
-	myfile << calculateQueueTime(iniFrame, lastFrame,cap[0].get(CV_CAP_PROP_FPS))<< " seg";
+	myfile << calculateQueueTime(iniFrame, lastFrame,cap[0].get(CV_CAP_PROP_FPS))<< " seg"<<endl;
+	myfile <<"outTreshold: "<<outTreshold;
 	myfile.close();
 	
 	

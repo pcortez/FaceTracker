@@ -45,20 +45,11 @@ void drawLegend(vector<string> texts, vector<CvScalar> colorLine, Mat& img);
 RotatedRect scaleRect(const RotatedRect rect, const double scale);
 RotatedRect scaleRect(const RotatedRect rect, const cv::Size2f scale);
 
-Mat resizeImg(Mat& img, const int width, const int height);
-
 string CreatefileNameString();
 
-vector<float> normalizeVector(const vector<float>& src);
-vector<double> normalizeVector(const vector<double>& src);
-float meanVector(const vector<float>& src);
-double meanVector(const vector<double>& src);
-float varianceVector(const vector<float>& src, float mu);
-double varianceVector(const vector<double>& src, float mu);
 inline float sigmoid(float x){
 	return 1.0f/(1.0f+exp(-x));
 };
-Mat upperWeightedMat(const Mat& src);
 Point2f getAreaCenter(RotatedRect& rect, int indx);
 
 cv::Rect getBoundingRect(RotatedRect rect);

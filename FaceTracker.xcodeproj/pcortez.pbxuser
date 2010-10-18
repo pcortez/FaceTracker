@@ -192,6 +192,53 @@
 			80C8DFB1126C867F00716ED9 /* PBXTextBookmark */ = 80C8DFB1126C867F00716ED9 /* PBXTextBookmark */;
 			80C8DFB2126C867F00716ED9 /* PBXTextBookmark */ = 80C8DFB2126C867F00716ED9 /* PBXTextBookmark */;
 			80C8DFB4126C86AF00716ED9 /* PBXTextBookmark */ = 80C8DFB4126C86AF00716ED9 /* PBXTextBookmark */;
+			80C8DFB9126C878700716ED9 /* PBXTextBookmark */ = 80C8DFB9126C878700716ED9 /* PBXTextBookmark */;
+			80C8DFBD126C8CEC00716ED9 /* PBXTextBookmark */ = 80C8DFBD126C8CEC00716ED9 /* PBXTextBookmark */;
+			80C8DFC1126C8DA800716ED9 /* PBXTextBookmark */ = 80C8DFC1126C8DA800716ED9 /* PBXTextBookmark */;
+			80C8DFC5126C92B800716ED9 /* PBXTextBookmark */ = 80C8DFC5126C92B800716ED9 /* PBXTextBookmark */;
+			80C8DFC9126C96D400716ED9 /* PBXTextBookmark */ = 80C8DFC9126C96D400716ED9 /* PBXTextBookmark */;
+			80C8DFCF126C9DB500716ED9 /* PBXTextBookmark */ = 80C8DFCF126C9DB500716ED9 /* PBXTextBookmark */;
+			80C8DFD3126C9DE500716ED9 /* PBXTextBookmark */ = 80C8DFD3126C9DE500716ED9 /* PBXTextBookmark */;
+			80C8DFD7126CA2D300716ED9 /* PBXTextBookmark */ = 80C8DFD7126CA2D300716ED9 /* PBXTextBookmark */;
+			80C8DFF1126CA3F400716ED9 /* PBXTextBookmark */ = 80C8DFF1126CA3F400716ED9 /* PBXTextBookmark */;
+			80C8E00B126CA59800716ED9 /* PBXTextBookmark */ = 80C8E00B126CA59800716ED9 /* PBXTextBookmark */;
+			80C8E00F126CA5D300716ED9 /* PBXTextBookmark */ = 80C8E00F126CA5D300716ED9 /* PBXTextBookmark */;
+			80C8E013126CA60D00716ED9 /* PBXTextBookmark */ = 80C8E013126CA60D00716ED9 /* PBXTextBookmark */;
+			80C8E017126CA64700716ED9 /* PBXTextBookmark */ = 80C8E017126CA64700716ED9 /* PBXTextBookmark */;
+			80C8E02B126CA9A500716ED9 /* PBXTextBookmark */ = 80C8E02B126CA9A500716ED9 /* PBXTextBookmark */;
+			80C8E031126CB68500716ED9 /* PBXTextBookmark */ = 80C8E031126CB68500716ED9 /* PBXTextBookmark */;
+			80C8E035126CB78D00716ED9 /* PBXTextBookmark */ = 80C8E035126CB78D00716ED9 /* PBXTextBookmark */;
+			80C8E039126CB7A900716ED9 /* PBXTextBookmark */ = 80C8E039126CB7A900716ED9 /* PBXTextBookmark */;
+			80C8E03D126CB7C400716ED9 /* PBXTextBookmark */ = 80C8E03D126CB7C400716ED9 /* PBXTextBookmark */;
+			80C8E043126CB91E00716ED9 /* PBXTextBookmark */ = 80C8E043126CB91E00716ED9 /* PBXTextBookmark */;
+			80C8E065126CBA9C00716ED9 /* PBXTextBookmark */ = 80C8E065126CBA9C00716ED9 /* PBXTextBookmark */;
+			80C8E06B126CBB0B00716ED9 /* PBXTextBookmark */ = 80C8E06B126CBB0B00716ED9 /* PBXTextBookmark */;
+			80C8E06F126CBB5300716ED9 /* PBXTextBookmark */ = 80C8E06F126CBB5300716ED9 /* PBXTextBookmark */;
+			80C8E077126CC35200716ED9 /* PBXTextBookmark */ = 80C8E077126CC35200716ED9 /* PBXTextBookmark */;
+			80C8E0B7126CC88E00716ED9 /* PBXTextBookmark */ = 80C8E0B7126CC88E00716ED9 /* PBXTextBookmark */;
+			80C8E0CB126CC9D300716ED9 /* PBXTextBookmark */ = 80C8E0CB126CC9D300716ED9 /* PBXTextBookmark */;
+			80C8E0CF126CCA0B00716ED9 /* PBXTextBookmark */ = 80C8E0CF126CCA0B00716ED9 /* PBXTextBookmark */;
+			80C8E0D5126CD28F00716ED9 /* PBXTextBookmark */ = 80C8E0D5126CD28F00716ED9 /* PBXTextBookmark */;
+			80C8E0EE126CD36700716ED9 /* PBXTextBookmark */ = 80C8E0EE126CD36700716ED9 /* PBXTextBookmark */;
+			80C8E0F8126CD3B500716ED9 /* PBXTextBookmark */ = 80C8E0F8126CD3B500716ED9 /* PBXTextBookmark */;
+			80C8E0FE126CD3F000716ED9 /* PBXTextBookmark */ = 80C8E0FE126CD3F000716ED9 /* PBXTextBookmark */;
+			80C8E104126CD55900716ED9 /* PBXTextBookmark */ = 80C8E104126CD55900716ED9 /* PBXTextBookmark */;
+			80C8E105126CD55900716ED9 /* PBXTextBookmark */ = 80C8E105126CD55900716ED9 /* PBXTextBookmark */;
+			80C8E10A126CD56000716ED9 /* PBXTextBookmark */ = 80C8E10A126CD56000716ED9 /* PBXTextBookmark */;
+			80C8E10B126CD56000716ED9 /* PBXTextBookmark */ = 80C8E10B126CD56000716ED9 /* PBXTextBookmark */;
+			80C8E10E126CD56000716ED9 /* PBXTextBookmark */ = 80C8E10E126CD56000716ED9 /* PBXTextBookmark */;
+			80C8E10F126CD56000716ED9 /* PBXTextBookmark */ = 80C8E10F126CD56000716ED9 /* PBXTextBookmark */;
+			80C8E110126CD56000716ED9 /* PBXTextBookmark */ = 80C8E110126CD56000716ED9 /* PBXTextBookmark */;
+			80C8E114126CD5DB00716ED9 /* PBXTextBookmark */ = 80C8E114126CD5DB00716ED9 /* PBXTextBookmark */;
+			80C8E117126CD5FD00716ED9 /* PBXTextBookmark */ = 80C8E117126CD5FD00716ED9 /* PBXTextBookmark */;
+			80C8E11A126CD64E00716ED9 /* PBXTextBookmark */ = 80C8E11A126CD64E00716ED9 /* PBXTextBookmark */;
+			80C8E11B126CD64E00716ED9 /* PBXTextBookmark */ = 80C8E11B126CD64E00716ED9 /* PBXTextBookmark */;
+			80C8E11C126CD64E00716ED9 /* PBXTextBookmark */ = 80C8E11C126CD64E00716ED9 /* PBXTextBookmark */;
+			80C8E11D126CD64E00716ED9 /* PBXTextBookmark */ = 80C8E11D126CD64E00716ED9 /* PBXTextBookmark */;
+			80C8E11E126CD66000716ED9 /* PBXTextBookmark */ = 80C8E11E126CD66000716ED9 /* PBXTextBookmark */;
+			80C8E11F126CD66000716ED9 /* PBXBookmark */ = 80C8E11F126CD66000716ED9 /* PBXBookmark */;
+			80C8E120126CD66000716ED9 /* PBXTextBookmark */ = 80C8E120126CD66000716ED9 /* PBXTextBookmark */;
+			80C8E121126CD66000716ED9 /* PBXTextBookmark */ = 80C8E121126CD66000716ED9 /* PBXTextBookmark */;
 			80CBEA6A126912620030A18B = 80CBEA6A126912620030A18B /* PBXTextBookmark */;
 			80CBEA6B126912620030A18B = 80CBEA6B126912620030A18B /* PBXTextBookmark */;
 			80CBEA6D126912620030A18B = 80CBEA6D126912620030A18B /* PBXTextBookmark */;
@@ -214,10 +261,10 @@
 	};
 	08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            c =             (\n                                {\n                    r = \"{474, 53}\";\n                    s = 0;\n                },\n                                {\n                    r = \"{571, 73}\";\n                    s = 0;\n                },\n                                {\n                    r = \"{684, 71}\";\n                    s = 0;\n                },\n                                {\n                    r = \"{799, 75}\";\n                    s = 0;\n                },\n                                {\n                    r = \"{918, 75}\";\n                    s = 0;\n                },\n                                {\n                    r = \"{1304, 74}\";\n                    s = 0;\n                },\n                                {\n                    r = \"{1406, 72}\";\n                    s = 0;\n                },\n                                {\n                    r = \"{1699, 73}\";\n                    s = 0;\n                },\n                                {\n                    r = \"{1958, 73}\";\n                    s = 0;\n                }\n            );\n            r = \"{456, 1704}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 6194}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {969, 2028}}";
-			sepNavSelRange = "{603, 0}";
-			sepNavVisRange = "{1677, 1668}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{474, 53}\";\n            s = 0;\n        },\n                {\n            r = \"{571, 73}\";\n            s = 0;\n        },\n                {\n            r = \"{684, 71}\";\n            s = 0;\n        },\n                {\n            r = \"{799, 75}\";\n            s = 0;\n        },\n                {\n            r = \"{918, 75}\";\n            s = 0;\n        },\n                {\n            r = \"{1304, 74}\";\n            s = 0;\n        },\n                {\n            r = \"{1406, 72}\";\n            s = 0;\n        },\n                {\n            r = \"{1699, 73}\";\n            s = 0;\n        },\n                {\n            r = \"{1958, 73}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 6170}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {969, 2561}}";
+			sepNavSelRange = "{2404, 0}";
+			sepNavVisRange = "{2049, 1775}";
 			sepNavWindowFrame = "{{290, 4}, {819, 774}}";
 		};
 	};
@@ -254,7 +301,7 @@
 		fRef = 80D1FD0810EA9E4F0073E4D9 /* Utilities.cpp */;
 		name = "Utilities.cpp: 149";
 		rLen = 0;
-		rLoc = 3894;
+		rLoc = 3866;
 		rType = 0;
 		vrLen = 1433;
 		vrLoc = 3396;
@@ -671,10 +718,10 @@
 			YES,
 		);
 		argumentStrings = (
-			"-rightVideo /Users/pcortez/Documents/Magister/Codigo/FaceTracker/caja2_1.avi",
-			"-topVideo /Users/pcortez/Documents/Magister/Codigo/FaceTracker/caja1_2.avi",
-			"-configPathRV /Users/pcortez/Documents/Magister/Codigo/FaceTracker/series/serie27/configvr.txt",
-			"-configPathTV /Users/pcortez/Documents/Magister/Codigo/FaceTracker/series/serie27/configvt.txt",
+			"-rightVideo /Users/pcortez/Documents/Magister/Codigo/FaceTracker/caja3_1.avi",
+			"-topVideo /Users/pcortez/Documents/Magister/Codigo/FaceTracker/caja3_2.avi",
+			"-configPathRV /Users/pcortez/Documents/Magister/Codigo/FaceTracker/series/serie33/configvr.txt",
+			"-configPathTV /Users/pcortez/Documents/Magister/Codigo/FaceTracker/series/serie33/configvt.txt",
 		);
 		autoAttachOnCrash = 1;
 		breakpointsEnabled = 0;
@@ -840,7 +887,7 @@
 		fRef = 80D1FD0810EA9E4F0073E4D9 /* Utilities.cpp */;
 		name = "Utilities.cpp: 710";
 		rLen = 0;
-		rLoc = 20591;
+		rLoc = 18859;
 		rType = 0;
 		vrLen = 1972;
 		vrLoc = 17154;
@@ -890,7 +937,7 @@
 		fRef = 80D1FD0810EA9E4F0073E4D9 /* Utilities.cpp */;
 		name = "Utilities.cpp: 710";
 		rLen = 0;
-		rLoc = 20591;
+		rLoc = 18859;
 		rType = 0;
 		vrLen = 1972;
 		vrLoc = 17154;
@@ -930,7 +977,7 @@
 		fRef = 80D1FD0810EA9E4F0073E4D9 /* Utilities.cpp */;
 		name = "Utilities.cpp: 710";
 		rLen = 0;
-		rLoc = 20591;
+		rLoc = 18859;
 		rType = 0;
 		vrLen = 1972;
 		vrLoc = 17154;
@@ -954,7 +1001,7 @@
 		fRef = 80D1FD0810EA9E4F0073E4D9 /* Utilities.cpp */;
 		name = "Utilities.cpp: 710";
 		rLen = 0;
-		rLoc = 20591;
+		rLoc = 18859;
 		rType = 0;
 		vrLen = 1881;
 		vrLoc = 17249;
@@ -974,7 +1021,7 @@
 		fRef = 80D1FD0810EA9E4F0073E4D9 /* Utilities.cpp */;
 		name = "Utilities.cpp: 710";
 		rLen = 0;
-		rLoc = 20591;
+		rLoc = 18859;
 		rType = 0;
 		vrLen = 1881;
 		vrLoc = 17249;
@@ -994,7 +1041,7 @@
 		fRef = 80D1FD0810EA9E4F0073E4D9 /* Utilities.cpp */;
 		name = "Utilities.cpp: 710";
 		rLen = 0;
-		rLoc = 20591;
+		rLoc = 18859;
 		rType = 0;
 		vrLen = 1881;
 		vrLoc = 17249;
@@ -1008,6 +1055,464 @@
 		rType = 0;
 		vrLen = 1668;
 		vrLoc = 3380;
+	};
+	80C8DFB9126C878700716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 144";
+		rLen = 0;
+		rLoc = 3790;
+		rType = 0;
+		vrLen = 1716;
+		vrLoc = 2973;
+	};
+	80C8DFBD126C8CEC00716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 144";
+		rLen = 0;
+		rLoc = 3790;
+		rType = 0;
+		vrLen = 1714;
+		vrLoc = 2973;
+	};
+	80C8DFC1126C8DA800716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 211";
+		rLen = 0;
+		rLoc = 6157;
+		rType = 0;
+		vrLen = 1251;
+		vrLoc = 4989;
+	};
+	80C8DFC5126C92B800716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 137";
+		rLen = 0;
+		rLoc = 3590;
+		rType = 0;
+		vrLen = 1680;
+		vrLoc = 3303;
+	};
+	80C8DFC9126C96D400716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 139";
+		rLen = 0;
+		rLoc = 3695;
+		rType = 0;
+		vrLen = 1686;
+		vrLoc = 3303;
+	};
+	80C8DFCF126C9DB500716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 133";
+		rLen = 0;
+		rLoc = 3452;
+		rType = 0;
+		vrLen = 1648;
+		vrLoc = 2440;
+	};
+	80C8DFD3126C9DE500716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 102";
+		rLen = 0;
+		rLoc = 2466;
+		rType = 0;
+		vrLen = 1542;
+		vrLoc = 2163;
+	};
+	80C8DFD7126CA2D300716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 143";
+		rLen = 0;
+		rLoc = 3790;
+		rType = 0;
+		vrLen = 1554;
+		vrLoc = 2440;
+	};
+	80C8DFF1126CA3F400716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 102";
+		rLen = 0;
+		rLoc = 2466;
+		rType = 0;
+		vrLen = 2988;
+		vrLoc = 307;
+	};
+	80C8E00B126CA59800716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 102";
+		rLen = 0;
+		rLoc = 2466;
+		rType = 0;
+		vrLen = 2988;
+		vrLoc = 307;
+	};
+	80C8E00F126CA5D300716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 102";
+		rLen = 0;
+		rLoc = 2466;
+		rType = 0;
+		vrLen = 2988;
+		vrLoc = 307;
+	};
+	80C8E013126CA60D00716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 102";
+		rLen = 0;
+		rLoc = 2466;
+		rType = 0;
+		vrLen = 2989;
+		vrLoc = 307;
+	};
+	80C8E017126CA64700716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 102";
+		rLen = 0;
+		rLoc = 2466;
+		rType = 0;
+		vrLen = 2988;
+		vrLoc = 307;
+	};
+	80C8E02B126CA9A500716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 143";
+		rLen = 0;
+		rLoc = 3790;
+		rType = 0;
+		vrLen = 1553;
+		vrLoc = 2440;
+	};
+	80C8E031126CB68500716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 148";
+		rLen = 0;
+		rLoc = 4025;
+		rType = 0;
+		vrLen = 1690;
+		vrLoc = 3282;
+	};
+	80C8E035126CB78D00716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 151";
+		rLen = 0;
+		rLoc = 4083;
+		rType = 0;
+		vrLen = 1712;
+		vrLoc = 3282;
+	};
+	80C8E039126CB7A900716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 148";
+		rLen = 0;
+		rLoc = 4041;
+		rType = 0;
+		vrLen = 1687;
+		vrLoc = 3282;
+	};
+	80C8E03D126CB7C400716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 148";
+		rLen = 0;
+		rLoc = 4036;
+		rType = 0;
+		vrLen = 1687;
+		vrLoc = 3282;
+	};
+	80C8E043126CB91E00716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 132";
+		rLen = 0;
+		rLoc = 3452;
+		rType = 0;
+		vrLen = 1730;
+		vrLoc = 2875;
+	};
+	80C8E065126CBA9C00716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 102";
+		rLen = 0;
+		rLoc = 2466;
+		rType = 0;
+		vrLen = 1505;
+		vrLoc = 2309;
+	};
+	80C8E06B126CBB0B00716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 102";
+		rLen = 0;
+		rLoc = 2466;
+		rType = 0;
+		vrLen = 1505;
+		vrLoc = 2309;
+	};
+	80C8E06F126CBB5300716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 132";
+		rLen = 0;
+		rLoc = 3452;
+		rType = 0;
+		vrLen = 1500;
+		vrLoc = 2309;
+	};
+	80C8E077126CC35200716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 136";
+		rLen = 0;
+		rLoc = 3590;
+		rType = 0;
+		vrLen = 1640;
+		vrLoc = 2659;
+	};
+	80C8E0B7126CC88E00716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 132";
+		rLen = 0;
+		rLoc = 3452;
+		rType = 0;
+		vrLen = 1424;
+		vrLoc = 2309;
+	};
+	80C8E0CB126CC9D300716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 102";
+		rLen = 0;
+		rLoc = 2466;
+		rType = 0;
+		vrLen = 1424;
+		vrLoc = 2309;
+	};
+	80C8E0CF126CCA0B00716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 102";
+		rLen = 0;
+		rLoc = 2466;
+		rType = 0;
+		vrLen = 1424;
+		vrLoc = 2309;
+	};
+	80C8E0D5126CD28F00716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 132";
+		rLen = 0;
+		rLoc = 3452;
+		rType = 0;
+		vrLen = 1939;
+		vrLoc = 308;
+	};
+	80C8E0EE126CD36700716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 102";
+		rLen = 0;
+		rLoc = 2466;
+		rType = 0;
+		vrLen = 1444;
+		vrLoc = 2272;
+	};
+	80C8E0F8126CD3B500716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 102";
+		rLen = 0;
+		rLoc = 2466;
+		rType = 0;
+		vrLen = 1444;
+		vrLoc = 2272;
+	};
+	80C8E0FE126CD3F000716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 132";
+		rLen = 0;
+		rLoc = 3452;
+		rType = 0;
+		vrLen = 1607;
+		vrLoc = 2553;
+	};
+	80C8E104126CD55900716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		rLen = 9;
+		rLoc = 4184;
+		rType = 0;
+	};
+	80C8E105126CD55900716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 156";
+		rLen = 0;
+		rLoc = 4306;
+		rType = 0;
+		vrLen = 1290;
+		vrLoc = 3653;
+	};
+	80C8E10A126CD56000716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 132";
+		rLen = 0;
+		rLoc = 3452;
+		rType = 0;
+		vrLen = 1712;
+		vrLoc = 2553;
+	};
+	80C8E10B126CD56000716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 133";
+		rLen = 0;
+		rLoc = 3452;
+		rType = 0;
+		vrLen = 1743;
+		vrLoc = 2875;
+	};
+	80C8E10E126CD56000716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 80D1FD0710EA9E4F0073E4D9 /* Utilities.h */;
+		name = "Utilities.h: 48";
+		rLen = 0;
+		rLoc = 1195;
+		rType = 0;
+		vrLen = 1838;
+		vrLoc = 318;
+	};
+	80C8E10F126CD56000716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 80D1FD0810EA9E4F0073E4D9 /* Utilities.cpp */;
+		rLen = 0;
+		rLoc = 9223372036854774075;
+		rType = 0;
+	};
+	80C8E110126CD56000716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 80D1FD0810EA9E4F0073E4D9 /* Utilities.cpp */;
+		name = "Utilities.cpp: 426";
+		rLen = 0;
+		rLoc = 11965;
+		rType = 0;
+		vrLen = 12121;
+		vrLoc = 134;
+	};
+	80C8E114126CD5DB00716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 154";
+		rLen = 0;
+		rLoc = 4171;
+		rType = 0;
+		vrLen = 1264;
+		vrLoc = 3488;
+	};
+	80C8E117126CD5FD00716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 154";
+		rLen = 0;
+		rLoc = 4171;
+		rType = 0;
+		vrLen = 1264;
+		vrLoc = 3488;
+	};
+	80C8E11A126CD64E00716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 124";
+		rLen = 0;
+		rLoc = 3034;
+		rType = 0;
+		vrLen = 1775;
+		vrLoc = 2679;
+	};
+	80C8E11B126CD64E00716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 80D1FD0710EA9E4F0073E4D9 /* Utilities.h */;
+		name = "Utilities.h: 48";
+		rLen = 0;
+		rLoc = 1227;
+		rType = 0;
+		vrLen = 1551;
+		vrLoc = 182;
+	};
+	80C8E11C126CD64E00716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 80D1FD0810EA9E4F0073E4D9 /* Utilities.cpp */;
+		name = "Utilities.cpp: 447";
+		rLen = 0;
+		rLoc = 12067;
+		rType = 0;
+		vrLen = 20086;
+		vrLoc = 137;
+	};
+	80C8E11D126CD64E00716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 80D1FD0810EA9E4F0073E4D9 /* Utilities.cpp */;
+		name = "Utilities.cpp: 427";
+		rLen = 0;
+		rLoc = 12066;
+		rType = 0;
+		vrLen = 19704;
+		vrLoc = 40;
+	};
+	80C8E11E126CD66000716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 124";
+		rLen = 0;
+		rLoc = 3034;
+		rType = 0;
+		vrLen = 1775;
+		vrLoc = 2679;
+	};
+	80C8E11F126CD66000716ED9 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 80D1FD0710EA9E4F0073E4D9 /* Utilities.h */;
+	};
+	80C8E120126CD66000716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 80D1FD0710EA9E4F0073E4D9 /* Utilities.h */;
+		name = "Utilities.h: 29";
+		rLen = 0;
+		rLoc = 539;
+		rType = 0;
+		vrLen = 1551;
+		vrLoc = 182;
+	};
+	80C8E121126CD66000716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 80D1FD0810EA9E4F0073E4D9 /* Utilities.cpp */;
+		name = "Utilities.cpp: 427";
+		rLen = 0;
+		rLoc = 12066;
+		rType = 0;
+		vrLen = 19704;
+		vrLoc = 40;
 	};
 	80CBEA6A126912620030A18B /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -1034,7 +1539,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 142";
 		rLen = 0;
-		rLoc = 3728;
+		rLoc = 3702;
 		rType = 0;
 		vrLen = 1886;
 		vrLoc = 3096;
@@ -1051,19 +1556,19 @@
 	};
 	80D1FD0710EA9E4F0073E4D9 /* Utilities.h */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1644, 30}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2156}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {1034, 910}}";
-			sepNavSelRange = "{1922, 0}";
-			sepNavVisRange = "{318, 1809}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1259, 30}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 1733}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {969, 793}}";
+			sepNavSelRange = "{539, 0}";
+			sepNavVisRange = "{182, 1522}";
 			sepNavWindowFrame = "{{119, 4}, {1093, 774}}";
 		};
 	};
 	80D1FD0810EA9E4F0073E4D9 /* Utilities.cpp */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{489, 2752}\";\n            s = 0;\n        },\n                {\n            r = \"{3303, 2190}\";\n            s = 0;\n        },\n                {\n            r = \"{5547, 212}\";\n            s = 0;\n        },\n                {\n            r = \"{5808, 1273}\";\n            s = 0;\n        },\n                {\n            r = \"{7160, 1208}\";\n            s = 0;\n        },\n                {\n            r = \"{8447, 171}\";\n            s = 0;\n        },\n                {\n            r = \"{8661, 600}\";\n            s = 0;\n        },\n                {\n            r = \"{9328, 629}\";\n            s = 0;\n        },\n                {\n            r = \"{10008, 537}\";\n            s = 0;\n        },\n                {\n            r = \"{10635, 891}\";\n            s = 0;\n        },\n                {\n            r = \"{11595, 140}\";\n            s = 0;\n        },\n                {\n            r = \"{11808, 184}\";\n            s = 0;\n        },\n                {\n            r = \"{12054, 97}\";\n            s = 0;\n        },\n                {\n            r = \"{12184, 68}\";\n            s = 0;\n        },\n                {\n            r = \"{12311, 180}\";\n            s = 0;\n        },\n                {\n            r = \"{12551, 180}\";\n            s = 0;\n        },\n                {\n            r = \"{12777, 94}\";\n            s = 0;\n        },\n                {\n            r = \"{12918, 95}\";\n            s = 0;\n        },\n                {\n            r = \"{13074, 111}\";\n            s = 0;\n        },\n                {\n            r = \"{13244, 110}\";\n            s = 0;\n        },\n                {\n            r = \"{13393, 404}\";\n            s = 0;\n        },\n                {\n            r = \"{13892, 865}\";\n            s = 0;\n        },\n                {\n            r = \"{14802, 62}\";\n            s = 0;\n        },\n                {\n            r = \"{14917, 1976}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 21476}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {1034, 2587}}";
-			sepNavSelRange = "{5586, 0}";
-			sepNavVisRange = "{2244, 1881}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{461, 2752}\";\n            s = 0;\n        },\n                {\n            r = \"{3275, 2190}\";\n            s = 0;\n        },\n                {\n            r = \"{5519, 212}\";\n            s = 0;\n        },\n                {\n            r = \"{5780, 1273}\";\n            s = 0;\n        },\n                {\n            r = \"{7132, 1208}\";\n            s = 0;\n        },\n                {\n            r = \"{8419, 171}\";\n            s = 0;\n        },\n                {\n            r = \"{8633, 600}\";\n            s = 0;\n        },\n                {\n            r = \"{9300, 629}\";\n            s = 0;\n        },\n                {\n            r = \"{9980, 537}\";\n            s = 0;\n        },\n                {\n            r = \"{10607, 891}\";\n            s = 0;\n        },\n                {\n            r = \"{11567, 140}\";\n            s = 0;\n        },\n                {\n            r = \"{11780, 184}\";\n            s = 0;\n        },\n                {\n            r = \"{11997, 68}\";\n            s = 0;\n        },\n                {\n            r = \"{12160, 865}\";\n            s = 0;\n        },\n                {\n            r = \"{13070, 62}\";\n            s = 0;\n        },\n                {\n            r = \"{13185, 1976}\";\n            s = 0;\n        },\n                {\n            r = \"{15253, 3792}\";\n            s = 0;\n        },\n                {\n            r = \"{19085, 657}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 19744}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1034, 702}}";
+			sepNavSelRange = "{1224, 0}";
+			sepNavVisRange = "{40, 1515}";
 			sepNavWindowFrame = "{{119, 4}, {1093, 774}}";
 		};
 	};
@@ -1079,7 +1584,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 134";
 		rLen = 0;
-		rLoc = 3478;
+		rLoc = 3452;
 		rType = 0;
 		vrLen = 1566;
 		vrLoc = 2248;
@@ -1089,7 +1594,7 @@
 		fRef = 80D1FD0710EA9E4F0073E4D9 /* Utilities.h */;
 		name = "Utilities.h: 67";
 		rLen = 0;
-		rLoc = 1951;
+		rLoc = 1528;
 		rType = 0;
 		vrLen = 1782;
 		vrLoc = 374;
@@ -1099,7 +1604,7 @@
 		fRef = 80D1FD0810EA9E4F0073E4D9 /* Utilities.cpp */;
 		name = "Utilities.cpp: 602";
 		rLen = 0;
-		rLoc = 16927;
+		rLoc = 15195;
 		rType = 0;
 		vrLen = 4861;
 		vrLoc = 13800;
@@ -1109,7 +1614,7 @@
 		fRef = 80D1FD0810EA9E4F0073E4D9 /* Utilities.cpp */;
 		name = "Utilities.cpp: 710";
 		rLen = 0;
-		rLoc = 20591;
+		rLoc = 18859;
 		rType = 0;
 		vrLen = 1881;
 		vrLoc = 17249;
