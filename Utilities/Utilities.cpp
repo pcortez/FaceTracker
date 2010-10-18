@@ -201,7 +201,6 @@ bool checkConfig(config_SystemParameter *param, bool print){
 	return true;
 }
 
-
 void deleteOldVideo(config_SystemParameter param){
 	//borrando archivo video.avi para no crear archivo
 	//muy grandes
@@ -532,8 +531,9 @@ bool searchFace(const Mat& src, RotatedRect rect){
 RotatedRect searchFace(Mat& src, GenericModel *model, cv::Size2f scaleFactor, bool draw){
 	
 	GenericFeature *minFeature;
-	Mat auxImg = resizeImg(src, scaleFactor.width*src.size().width, scaleFactor.height*src.size().height);
-	Mat auxImg2 = auxImg.clone();
+	Mat auxImg, auxImg2;
+	resize(src, auxImg,cv::Size2i(scaleFactor.width*src.size().width, scaleFactor.height*src.size().height));
+	auxImg2 = auxImg.clone();
 	
 	CvHaarClassifierCascade* cascade = (CvHaarClassifierCascade*) cvLoad (CASCADE_NAME, 0, 0, 0);
     CvMemStorage* storage = cvCreateMemStorage(0);
