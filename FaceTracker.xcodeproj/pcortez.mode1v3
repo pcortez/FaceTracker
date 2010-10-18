@@ -197,48 +197,7 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>80C8DFA2126C7A3300716ED9</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>Utilities.cpp</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>80C8DFA3126C7A3300716ED9</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>Utilities.cpp</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>80C8DFA4126C7A3300716ED9</string>
-						<key>history</key>
-						<array>
-							<string>80C8DF9E126C7A2600716ED9</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1093, 677}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>119 60 1093 718 0 0 1280 778 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -270,8 +229,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -308,8 +265,6 @@
 							<array>
 								<string>08FB7794FE84155DC02AAC07</string>
 								<string>08FB7795FE84155DC02AAC07</string>
-								<string>80C8DF73126C739100716ED9</string>
-								<string>806178331152947B000E19D0</string>
 								<string>4DBF872C0C0572BC00880673</string>
 								<string>4D9D40B00C04AC1600EEFFD0</string>
 								<string>1C37FBAC04509CD000000102</string>
@@ -319,8 +274,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>7</integer>
-									<integer>5</integer>
+									<integer>6</integer>
 									<integer>2</integer>
 									<integer>0</integer>
 								</array>
@@ -356,12 +310,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>FaceTracker.cpp</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -369,11 +325,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string></string>
+										<string>FaceTracker.cpp</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>80C8DFA1126C7A3300716ED9</string>
+										<string>80C8DFB4126C86AF00716ED9</string>
 										<key>history</key>
 										<array>
 											<string>80E7BDC810C71BEF00D797A0</string>
@@ -407,8 +363,8 @@
 											<string>800484C31261100F002CF9CE</string>
 											<string>800484C41261100F002CF9CE</string>
 											<string>80CE42B512676357004F9759</string>
-											<string>80C8DF98126C790E00716ED9</string>
 											<string>80C8DF99126C790E00716ED9</string>
+											<string>80C8DF98126C790E00716ED9</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -606,13 +562,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>80C8DFA5126C7A3300716ED9</string>
+		<string>80C8DFB3126C867F00716ED9</string>
+		<string>80C8DFA2126C7A3300716ED9</string>
 		<string>80C8DF8A126C745D00716ED9</string>
 		<string>80C8DF8B126C745D00716ED9</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>8095CF2110BF23F000A0205F</string>
-		<string>80C8DFA2126C7A3300716ED9</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/pcortez/Documents/Magister/Codigo/FaceTracker/FaceTracker.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -987,7 +943,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

@@ -11,8 +11,6 @@
 #include "Generic.h"
 #include "CondensationTracking.h"
 #include "TimeQueue.h"
-#include "test.h"
-
 	
 const char  * WINDOW_NAME  = "Face Tracker";
 
@@ -95,9 +93,6 @@ int main (int argc, char * const argv[]){
 	Mat OriginalFrame,DrawFrame,miniFrame;
     VideoCapture cap[2];
 	config_SystemParameter param[2];	
-	
-	cout << TEST_VAR<<endl;
-	cvWaitKey();
 	
     if (!readMainArgument(argc, argv, cap, param))
 		return 0;
