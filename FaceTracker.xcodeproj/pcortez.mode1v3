@@ -197,7 +197,48 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array/>
+	<array>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>80C8E18B126CF3E000716ED9</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>Utilities.cpp</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>80C8E18C126CF3E000716ED9</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>Utilities.cpp</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>80C8E192126CF6D900716ED9</string>
+						<key>history</key>
+						<array>
+							<string>80C8E185126CF3A700716ED9</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {1093, 677}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>119 60 1093 718 0 0 1280 778 </string>
+			</dict>
+		</dict>
+	</array>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -327,7 +368,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>80C8E164126CF16300716ED9</string>
+										<string>80C8E191126CF6D900716ED9</string>
 										<key>history</key>
 										<array>
 											<string>80E7BDC810C71BEF00D797A0</string>
@@ -362,9 +403,9 @@
 											<string>80CE42B512676357004F9759</string>
 											<string>80C8DF99126C790E00716ED9</string>
 											<string>80C8E125126CD74E00716ED9</string>
-											<string>80C8E145126CDE0A00716ED9</string>
 											<string>80C8E158126CF11200716ED9</string>
-											<string>80C8E159126CF11200716ED9</string>
+											<string>80C8E188126CF3E000716ED9</string>
+											<string>80C8E189126CF3E000716ED9</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -567,6 +608,7 @@
 		<string>80C8DF8B126C745D00716ED9</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>8095CF2110BF23F000A0205F</string>
+		<string>80C8E18B126CF3E000716ED9</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/pcortez/Documents/Magister/Codigo/FaceTracker/FaceTracker.xcodeproj</string>
 	</array>

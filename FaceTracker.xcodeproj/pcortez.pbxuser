@@ -270,6 +270,16 @@
 			80C8E162126CF15B00716ED9 /* PBXTextBookmark */ = 80C8E162126CF15B00716ED9 /* PBXTextBookmark */;
 			80C8E163126CF15B00716ED9 /* PBXTextBookmark */ = 80C8E163126CF15B00716ED9 /* PBXTextBookmark */;
 			80C8E164126CF16300716ED9 /* PBXTextBookmark */ = 80C8E164126CF16300716ED9 /* PBXTextBookmark */;
+			80C8E183126CF33900716ED9 /* PBXTextBookmark */ = 80C8E183126CF33900716ED9 /* PBXTextBookmark */;
+			80C8E185126CF3A700716ED9 /* PBXBookmark */ = 80C8E185126CF3A700716ED9 /* PBXBookmark */;
+			80C8E188126CF3E000716ED9 /* PBXTextBookmark */ = 80C8E188126CF3E000716ED9 /* PBXTextBookmark */;
+			80C8E189126CF3E000716ED9 /* PBXTextBookmark */ = 80C8E189126CF3E000716ED9 /* PBXTextBookmark */;
+			80C8E18A126CF3E000716ED9 /* PBXTextBookmark */ = 80C8E18A126CF3E000716ED9 /* PBXTextBookmark */;
+			80C8E18D126CF3E000716ED9 /* PBXTextBookmark */ = 80C8E18D126CF3E000716ED9 /* PBXTextBookmark */;
+			80C8E18F126CF40300716ED9 /* PBXTextBookmark */ = 80C8E18F126CF40300716ED9 /* PBXTextBookmark */;
+			80C8E190126CF40300716ED9 /* PBXTextBookmark */ = 80C8E190126CF40300716ED9 /* PBXTextBookmark */;
+			80C8E191126CF6D900716ED9 /* PBXTextBookmark */ = 80C8E191126CF6D900716ED9 /* PBXTextBookmark */;
+			80C8E192126CF6D900716ED9 /* PBXTextBookmark */ = 80C8E192126CF6D900716ED9 /* PBXTextBookmark */;
 			80CBEA6A126912620030A18B = 80CBEA6A126912620030A18B /* PBXTextBookmark */;
 			80CBEA6B126912620030A18B = 80CBEA6B126912620030A18B /* PBXTextBookmark */;
 			80CBEA6D126912620030A18B = 80CBEA6D126912620030A18B /* PBXTextBookmark */;
@@ -292,10 +302,10 @@
 	};
 	08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{486, 53}\";\n            s = 0;\n        },\n                {\n            r = \"{710, 270}\";\n            s = 0;\n        },\n                {\n            r = \"{1026, 270}\";\n            s = 0;\n        },\n                {\n            r = \"{1346, 325}\";\n            s = 0;\n        },\n                {\n            r = \"{1721, 325}\";\n            s = 0;\n        },\n                {\n            r = \"{2089, 106}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 6321}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {969, 2457}}";
-			sepNavSelRange = "{528, 0}";
-			sepNavVisRange = "{38, 1173}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{487, 53}\";\n            s = 0;\n        },\n                {\n            r = \"{711, 270}\";\n            s = 0;\n        },\n                {\n            r = \"{1027, 270}\";\n            s = 0;\n        },\n                {\n            r = \"{1347, 325}\";\n            s = 0;\n        },\n                {\n            r = \"{1722, 325}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 6390}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {969, 2522}}";
+			sepNavSelRange = "{1031, 0}";
+			sepNavVisRange = "{521, 1329}";
 			sepNavWindowFrame = "{{290, 4}, {819, 774}}";
 		};
 	};
@@ -900,7 +910,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 15";
 		rLen = 0;
-		rLoc = 259;
+		rLoc = 260;
 		rType = 0;
 		vrLen = 2770;
 		vrLoc = 0;
@@ -910,7 +920,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 15";
 		rLen = 0;
-		rLoc = 259;
+		rLoc = 260;
 		rType = 0;
 		vrLen = 2719;
 		vrLoc = 0;
@@ -950,7 +960,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 15";
 		rLen = 0;
-		rLoc = 259;
+		rLoc = 260;
 		rType = 0;
 		vrLen = 2770;
 		vrLoc = 0;
@@ -960,7 +970,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 15";
 		rLen = 0;
-		rLoc = 259;
+		rLoc = 260;
 		rType = 0;
 		vrLen = 2719;
 		vrLoc = 0;
@@ -980,7 +990,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 15";
 		rLen = 0;
-		rLoc = 259;
+		rLoc = 260;
 		rType = 0;
 		vrLen = 2770;
 		vrLoc = 0;
@@ -1044,7 +1054,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 96";
 		rLen = 0;
-		rLoc = 2420;
+		rLoc = 2489;
 		rType = 0;
 		vrLen = 2737;
 		vrLoc = 0;
@@ -1064,7 +1074,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 95";
 		rLen = 0;
-		rLoc = 2420;
+		rLoc = 2489;
 		rType = 0;
 		vrLen = 2746;
 		vrLoc = 0;
@@ -1084,7 +1094,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 95";
 		rLen = 0;
-		rLoc = 2420;
+		rLoc = 2489;
 		rType = 0;
 		vrLen = 1668;
 		vrLoc = 3380;
@@ -1094,7 +1104,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 144";
 		rLen = 0;
-		rLoc = 3874;
+		rLoc = 3943;
 		rType = 0;
 		vrLen = 1716;
 		vrLoc = 2973;
@@ -1104,7 +1114,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 144";
 		rLen = 0;
-		rLoc = 3874;
+		rLoc = 3943;
 		rType = 0;
 		vrLen = 1714;
 		vrLoc = 2973;
@@ -1114,7 +1124,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 211";
 		rLen = 0;
-		rLoc = 6173;
+		rLoc = 6242;
 		rType = 0;
 		vrLen = 1251;
 		vrLoc = 4989;
@@ -1124,7 +1134,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 137";
 		rLen = 0;
-		rLoc = 3651;
+		rLoc = 3720;
 		rType = 0;
 		vrLen = 1680;
 		vrLoc = 3303;
@@ -1134,7 +1144,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 139";
 		rLen = 0;
-		rLoc = 3756;
+		rLoc = 3825;
 		rType = 0;
 		vrLen = 1686;
 		vrLoc = 3303;
@@ -1144,7 +1154,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 133";
 		rLen = 0;
-		rLoc = 3513;
+		rLoc = 3582;
 		rType = 0;
 		vrLen = 1648;
 		vrLoc = 2440;
@@ -1154,7 +1164,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 102";
 		rLen = 0;
-		rLoc = 2580;
+		rLoc = 2649;
 		rType = 0;
 		vrLen = 1542;
 		vrLoc = 2163;
@@ -1164,7 +1174,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 143";
 		rLen = 0;
-		rLoc = 3874;
+		rLoc = 3943;
 		rType = 0;
 		vrLen = 1554;
 		vrLoc = 2440;
@@ -1174,7 +1184,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 102";
 		rLen = 0;
-		rLoc = 2580;
+		rLoc = 2649;
 		rType = 0;
 		vrLen = 2988;
 		vrLoc = 307;
@@ -1184,7 +1194,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 102";
 		rLen = 0;
-		rLoc = 2580;
+		rLoc = 2649;
 		rType = 0;
 		vrLen = 2988;
 		vrLoc = 307;
@@ -1194,7 +1204,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 102";
 		rLen = 0;
-		rLoc = 2580;
+		rLoc = 2649;
 		rType = 0;
 		vrLen = 2988;
 		vrLoc = 307;
@@ -1204,7 +1214,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 102";
 		rLen = 0;
-		rLoc = 2580;
+		rLoc = 2649;
 		rType = 0;
 		vrLen = 2989;
 		vrLoc = 307;
@@ -1214,7 +1224,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 102";
 		rLen = 0;
-		rLoc = 2580;
+		rLoc = 2649;
 		rType = 0;
 		vrLen = 2988;
 		vrLoc = 307;
@@ -1224,7 +1234,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 143";
 		rLen = 0;
-		rLoc = 3874;
+		rLoc = 3943;
 		rType = 0;
 		vrLen = 1553;
 		vrLoc = 2440;
@@ -1234,7 +1244,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 148";
 		rLen = 0;
-		rLoc = 4109;
+		rLoc = 4178;
 		rType = 0;
 		vrLen = 1690;
 		vrLoc = 3282;
@@ -1244,7 +1254,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 151";
 		rLen = 0;
-		rLoc = 4167;
+		rLoc = 4236;
 		rType = 0;
 		vrLen = 1712;
 		vrLoc = 3282;
@@ -1254,7 +1264,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 148";
 		rLen = 0;
-		rLoc = 4125;
+		rLoc = 4194;
 		rType = 0;
 		vrLen = 1687;
 		vrLoc = 3282;
@@ -1264,7 +1274,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 148";
 		rLen = 0;
-		rLoc = 4120;
+		rLoc = 4189;
 		rType = 0;
 		vrLen = 1687;
 		vrLoc = 3282;
@@ -1274,7 +1284,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 132";
 		rLen = 0;
-		rLoc = 3513;
+		rLoc = 3582;
 		rType = 0;
 		vrLen = 1730;
 		vrLoc = 2875;
@@ -1284,7 +1294,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 102";
 		rLen = 0;
-		rLoc = 2580;
+		rLoc = 2649;
 		rType = 0;
 		vrLen = 1505;
 		vrLoc = 2309;
@@ -1294,7 +1304,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 102";
 		rLen = 0;
-		rLoc = 2580;
+		rLoc = 2649;
 		rType = 0;
 		vrLen = 1505;
 		vrLoc = 2309;
@@ -1304,7 +1314,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 132";
 		rLen = 0;
-		rLoc = 3513;
+		rLoc = 3582;
 		rType = 0;
 		vrLen = 1500;
 		vrLoc = 2309;
@@ -1314,7 +1324,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 136";
 		rLen = 0;
-		rLoc = 3651;
+		rLoc = 3720;
 		rType = 0;
 		vrLen = 1640;
 		vrLoc = 2659;
@@ -1324,7 +1334,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 132";
 		rLen = 0;
-		rLoc = 3513;
+		rLoc = 3582;
 		rType = 0;
 		vrLen = 1424;
 		vrLoc = 2309;
@@ -1334,7 +1344,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 102";
 		rLen = 0;
-		rLoc = 2580;
+		rLoc = 2649;
 		rType = 0;
 		vrLen = 1424;
 		vrLoc = 2309;
@@ -1344,7 +1354,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 102";
 		rLen = 0;
-		rLoc = 2580;
+		rLoc = 2649;
 		rType = 0;
 		vrLen = 1424;
 		vrLoc = 2309;
@@ -1354,7 +1364,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 132";
 		rLen = 0;
-		rLoc = 3513;
+		rLoc = 3582;
 		rType = 0;
 		vrLen = 1939;
 		vrLoc = 308;
@@ -1364,7 +1374,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 102";
 		rLen = 0;
-		rLoc = 2580;
+		rLoc = 2649;
 		rType = 0;
 		vrLen = 1444;
 		vrLoc = 2272;
@@ -1374,7 +1384,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 102";
 		rLen = 0;
-		rLoc = 2580;
+		rLoc = 2649;
 		rType = 0;
 		vrLen = 1444;
 		vrLoc = 2272;
@@ -1384,7 +1394,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 132";
 		rLen = 0;
-		rLoc = 3513;
+		rLoc = 3582;
 		rType = 0;
 		vrLen = 1607;
 		vrLoc = 2553;
@@ -1393,7 +1403,7 @@
 		isa = PBXTextBookmark;
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		rLen = 0;
-		rLoc = 4250;
+		rLoc = 4319;
 		rType = 0;
 	};
 	80C8E105126CD55900716ED9 /* PBXTextBookmark */ = {
@@ -1401,7 +1411,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 156";
 		rLen = 0;
-		rLoc = 4322;
+		rLoc = 4391;
 		rType = 0;
 		vrLen = 1290;
 		vrLoc = 3653;
@@ -1411,7 +1421,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 132";
 		rLen = 0;
-		rLoc = 3513;
+		rLoc = 3582;
 		rType = 0;
 		vrLen = 1712;
 		vrLoc = 2553;
@@ -1421,7 +1431,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 133";
 		rLen = 0;
-		rLoc = 3513;
+		rLoc = 3582;
 		rType = 0;
 		vrLen = 1743;
 		vrLoc = 2875;
@@ -1458,7 +1468,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 154";
 		rLen = 0;
-		rLoc = 4322;
+		rLoc = 4391;
 		rType = 0;
 		vrLen = 1264;
 		vrLoc = 3488;
@@ -1468,7 +1478,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 154";
 		rLen = 0;
-		rLoc = 4322;
+		rLoc = 4391;
 		rType = 0;
 		vrLen = 1264;
 		vrLoc = 3488;
@@ -1478,7 +1488,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 124";
 		rLen = 0;
-		rLoc = 3148;
+		rLoc = 3217;
 		rType = 0;
 		vrLen = 1775;
 		vrLoc = 2679;
@@ -1518,7 +1528,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 124";
 		rLen = 0;
-		rLoc = 3148;
+		rLoc = 3217;
 		rType = 0;
 		vrLen = 1775;
 		vrLoc = 2679;
@@ -1552,7 +1562,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 154";
 		rLen = 0;
-		rLoc = 4322;
+		rLoc = 4391;
 		rType = 0;
 		vrLen = 1264;
 		vrLoc = 3488;
@@ -1572,7 +1582,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 124";
 		rLen = 0;
-		rLoc = 3148;
+		rLoc = 3217;
 		rType = 0;
 		vrLen = 1775;
 		vrLoc = 2679;
@@ -1582,7 +1592,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 133";
 		rLen = 0;
-		rLoc = 3531;
+		rLoc = 3600;
 		rType = 0;
 		vrLen = 1776;
 		vrLoc = 0;
@@ -1601,7 +1611,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 125";
 		rLen = 68;
-		rLoc = 3151;
+		rLoc = 3220;
 		rType = 0;
 		vrLen = 1474;
 		vrLoc = 2162;
@@ -1660,7 +1670,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 154";
 		rLen = 0;
-		rLoc = 4322;
+		rLoc = 4391;
 		rType = 0;
 		vrLen = 1244;
 		vrLoc = 3488;
@@ -1690,7 +1700,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 125";
 		rLen = 68;
-		rLoc = 3151;
+		rLoc = 3220;
 		rType = 0;
 		vrLen = 1429;
 		vrLoc = 2207;
@@ -1700,7 +1710,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 148";
 		rLen = 0;
-		rLoc = 2046;
+		rLoc = 2047;
 		rType = 0;
 		vrLen = 2383;
 		vrLoc = 2164;
@@ -1710,7 +1720,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 28";
 		rLen = 0;
-		rLoc = 602;
+		rLoc = 603;
 		rType = 0;
 		vrLen = 2352;
 		vrLoc = 260;
@@ -1724,7 +1734,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 81";
 		rLen = 0;
-		rLoc = 2192;
+		rLoc = 2183;
 		rType = 0;
 		vrLen = 2143;
 		vrLoc = 260;
@@ -1744,7 +1754,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 132";
 		rLen = 0;
-		rLoc = 3513;
+		rLoc = 3582;
 		rType = 0;
 		vrLen = 1501;
 		vrLoc = 2366;
@@ -1774,7 +1784,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 32";
 		rLen = 0;
-		rLoc = 703;
+		rLoc = 704;
 		rType = 0;
 		vrLen = 2566;
 		vrLoc = 150;
@@ -1784,7 +1794,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 28";
 		rLen = 0;
-		rLoc = 580;
+		rLoc = 581;
 		rType = 0;
 		vrLen = 2451;
 		vrLoc = 38;
@@ -1794,7 +1804,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 28";
 		rLen = 0;
-		rLoc = 580;
+		rLoc = 581;
 		rType = 0;
 		vrLen = 2451;
 		vrLoc = 38;
@@ -1833,7 +1843,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 155";
 		rLen = 0;
-		rLoc = 4322;
+		rLoc = 4391;
 		rType = 0;
 		vrLen = 772;
 		vrLoc = 2021;
@@ -1843,10 +1853,104 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 28";
 		rLen = 0;
-		rLoc = 580;
+		rLoc = 581;
 		rType = 0;
 		vrLen = 2516;
 		vrLoc = 38;
+	};
+	80C8E183126CF33900716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 56";
+		rLen = 0;
+		rLoc = 1331;
+		rType = 0;
+		vrLen = 2449;
+		vrLoc = 38;
+	};
+	80C8E185126CF3A700716ED9 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 80D1FD0810EA9E4F0073E4D9 /* Utilities.cpp */;
+	};
+	80C8E188126CF3E000716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 80D1FD0810EA9E4F0073E4D9 /* Utilities.cpp */;
+		name = "Utilities.cpp: 535";
+		rLen = 0;
+		rLoc = 15412;
+		rType = 0;
+		vrLen = 7998;
+		vrLoc = 8341;
+	};
+	80C8E189126CF3E000716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 104";
+		rLen = 0;
+		rLoc = 2649;
+		rType = 0;
+		vrLen = 1468;
+		vrLoc = 2049;
+	};
+	80C8E18A126CF3E000716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 81";
+		rLen = 0;
+		rLoc = 2116;
+		rType = 0;
+		vrLen = 2395;
+		vrLoc = 82;
+	};
+	80C8E18D126CF3E000716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 80D1FD0810EA9E4F0073E4D9 /* Utilities.cpp */;
+		name = "Utilities.cpp: 535";
+		rLen = 0;
+		rLoc = 15306;
+		rType = 0;
+		vrLen = 1787;
+		vrLoc = 16196;
+	};
+	80C8E18F126CF40300716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 87";
+		rLen = 0;
+		rLoc = 2269;
+		rType = 0;
+		vrLen = 2467;
+		vrLoc = 82;
+	};
+	80C8E190126CF40300716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 80D1FD0810EA9E4F0073E4D9 /* Utilities.cpp */;
+		name = "Utilities.cpp: 535";
+		rLen = 0;
+		rLoc = 15306;
+		rType = 0;
+		vrLen = 1787;
+		vrLoc = 16196;
+	};
+	80C8E191126CF6D900716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
+		name = "FaceTracker.cpp: 87";
+		rLen = 0;
+		rLoc = 2269;
+		rType = 0;
+		vrLen = 2515;
+		vrLoc = 573;
+	};
+	80C8E192126CF6D900716ED9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 80D1FD0810EA9E4F0073E4D9 /* Utilities.cpp */;
+		name = "Utilities.cpp: 535";
+		rLen = 0;
+		rLoc = 15306;
+		rType = 0;
+		vrLen = 1904;
+		vrLoc = 16196;
 	};
 	80CBEA6A126912620030A18B /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -1873,7 +1977,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 142";
 		rLen = 0;
-		rLoc = 3763;
+		rLoc = 3832;
 		rType = 0;
 		vrLen = 1886;
 		vrLoc = 3096;
@@ -1900,9 +2004,9 @@
 	80D1FD0810EA9E4F0073E4D9 /* Utilities.cpp */ = {
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{461, 2752}\";\n            s = 0;\n        },\n                {\n            r = \"{3275, 2190}\";\n            s = 0;\n        },\n                {\n            r = \"{5518, 212}\";\n            s = 0;\n        },\n                {\n            r = \"{5779, 1273}\";\n            s = 0;\n        },\n                {\n            r = \"{7131, 1208}\";\n            s = 0;\n        },\n                {\n            r = \"{8418, 171}\";\n            s = 0;\n        },\n                {\n            r = \"{8632, 600}\";\n            s = 0;\n        },\n                {\n            r = \"{9299, 629}\";\n            s = 0;\n        },\n                {\n            r = \"{9979, 537}\";\n            s = 0;\n        },\n                {\n            r = \"{10606, 891}\";\n            s = 0;\n        },\n                {\n            r = \"{11566, 140}\";\n            s = 0;\n        },\n                {\n            r = \"{11779, 184}\";\n            s = 0;\n        },\n                {\n            r = \"{11996, 68}\";\n            s = 0;\n        },\n                {\n            r = \"{12159, 865}\";\n            s = 0;\n        },\n                {\n            r = \"{13069, 62}\";\n            s = 0;\n        },\n                {\n            r = \"{13184, 1976}\";\n            s = 0;\n        },\n                {\n            r = \"{19105, 657}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 19764}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {796, 2327}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1034, 2093}}";
 			sepNavSelRange = "{1564, 0}";
-			sepNavVisRange = "{1367, 537}";
+			sepNavVisRange = "{2454, 1904}";
 			sepNavWindowFrame = "{{119, 4}, {1093, 774}}";
 		};
 	};
@@ -1918,7 +2022,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* FaceTracker.cpp */;
 		name = "FaceTracker.cpp: 134";
 		rLen = 0;
-		rLoc = 3513;
+		rLoc = 3582;
 		rType = 0;
 		vrLen = 1566;
 		vrLoc = 2248;

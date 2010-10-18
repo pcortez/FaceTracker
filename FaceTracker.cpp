@@ -6,6 +6,7 @@
 #include "Utilities.h"
 #include "LogEuclideanMath.h"
 
+
 //#include "GenericParticleFilter.h"
 #include "ExhaustiveTracking.h"
 #include "Generic.h"
@@ -77,13 +78,13 @@ bool readMainArgument(int argc, char * const argv[], VideoCapture cap[], config_
 			}
 		}
 		else if(strcmp(argv[i],"-debug") == 0){
-			cout <<argv[i]<<": "<< argv[i+1]<<endl;
+			cout <<argv[i]<<": ON"<<endl;
 			param[0].debugMode = true;
 			param[1].debugMode = true;
 		}
 
 	}
-
+	cout << "------------------------------------------------------"<<endl<<endl;
 	cap[0].set(CV_CAP_PROP_POS_MSEC, param[0].startMsec); 
 	
 	return true;
@@ -100,7 +101,7 @@ int main (int argc, char * const argv[]){
 		
 	const double widthSmall = 240;
 	const double heightSmall = 180;
-	const int outTreshold = 1;
+	const int outTreshold = 3;
 	
     cvNamedWindow(WINDOW_NAME,CV_WINDOW_AUTOSIZE);
 	
