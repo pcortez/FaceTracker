@@ -5,7 +5,7 @@ MAIN ARG
 el main tiene como input 5 parametros:
 
 -rightVideo   
-	arg:path al primer video a trackear (se parte por el de la c‡mara derecha)
+	arg:path al primer video a trackear (se parte por el de la camara derecha)
 
 -topVideo
 	arg: path al segundo video a trackear (cuando el objeto se sale del primer video continua en el segundo video - es el video con la vista superior o top)
@@ -17,7 +17,7 @@ el main tiene como input 5 parametros:
 	arg: path al archivo de config del segundo video (topVideo)
 
 -debug
-	no tiene argumento - se si se agrega, imprime informaci—n de debut y ademas hace cvWaiting() antes de partir cada video
+	no tiene argumento - se si se agrega, imprime informacion de debut y ademas hace cvWaiting() antes de partir cada video
 
 
 CONFIG FILES:
