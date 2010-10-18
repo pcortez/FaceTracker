@@ -17,7 +17,7 @@ el main tiene como input 5 parametros:
 	arg: path al archivo de config del segundo video (topVideo)
 
 -debug
-	no tiene argumento - se si se agrega, imprime informacion de debut y ademas hace cvWaiting() antes de partir cada video
+	no tiene argumento - se si se agrega, imprime informacion de debug y ademas hace cvWaiting() antes de partir cada video
 
 
 CONFIG FILES:
