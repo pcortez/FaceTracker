@@ -268,9 +268,6 @@
 								<string>806178331152947B000E19D0</string>
 								<string>4DBF872C0C0572BC00880673</string>
 								<string>4D9D40B00C04AC1600EEFFD0</string>
-								<string>1C37FBAC04509CD000000102</string>
-								<string>1C37FAAC04509CD000000102</string>
-								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
@@ -330,7 +327,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>80C8E147126CDE0A00716ED9</string>
+										<string>80C8E164126CF16300716ED9</string>
 										<key>history</key>
 										<array>
 											<string>80E7BDC810C71BEF00D797A0</string>
@@ -354,7 +351,6 @@
 											<string>802F167D12261BA400D219FE</string>
 											<string>80C6D254122724450027BF79</string>
 											<string>80C6D255122724450027BF79</string>
-											<string>800A964B12402B1E00B2978D</string>
 											<string>800A964C12402B1E00B2978D</string>
 											<string>800A968112402C0100B2978D</string>
 											<string>8097176A124177E800146298</string>
@@ -367,7 +363,8 @@
 											<string>80C8DF99126C790E00716ED9</string>
 											<string>80C8E125126CD74E00716ED9</string>
 											<string>80C8E145126CDE0A00716ED9</string>
-											<string>80C8E146126CDE0A00716ED9</string>
+											<string>80C8E158126CF11200716ED9</string>
+											<string>80C8E159126CF11200716ED9</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -565,7 +562,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>80C8E148126CDE0A00716ED9</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>80C8DF8A126C745D00716ED9</string>
 		<string>80C8DF8B126C745D00716ED9</string>
@@ -596,7 +592,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Utilities.cpp</string>
+								<string>configStruct.h</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>

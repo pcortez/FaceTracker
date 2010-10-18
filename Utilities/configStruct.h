@@ -36,6 +36,7 @@ struct config_SystemParameter {
 	string videoPath;//incluey el nombre del video pero no el .formato
 	double startMsec;
 	double endMsec;
+	bool debugMode;
 };
 
 struct CaptionDrawData {

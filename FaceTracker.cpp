@@ -17,85 +17,15 @@ const char  * WINDOW_NAME  = "Face Tracker";
 using namespace std;
 using namespace cv;
 
-/*
-bool readMainArgument(int argc, char * const argv[], VideoCapture cap[], config_SystemParameter param[]){
-	if (argc != 9) {
-		cout << "WRONG ARGUMENT NUMBER";
-		return false;
-	}
-	
-	if(strcmp(argv[1],"-rightVideo") != 0){
-		cout << "WRONG FLAG -rightVideo: "<< argv[1] <<endl;
-		return false;
-	}
-	if(strcmp(argv[3],"-topVideo") != 0){
-		cout << "WRONG FLAG -topVideo: "<< argv[3] <<endl;
-		return false;
-	}
-	if(strcmp(argv[5],"-configPathRV") != 0){
-		cout << "WRONG FLAG -configPathRV: "<< argv[5] <<endl;
-		return false;
-	}
-	if(strcmp(argv[7],"-configPathTV") != 0){
-		cout << "WRONG FLAG -configPathTV: "<< argv[7] <<endl;
-		return false;
-	}
-	
-	cout << "MAIN ARGUMENTS"<<endl;
-	cout << argv[1]<<": "<< argv[2]<<endl;
-	cout << argv[3]<<": "<< argv[4]<<endl;
-	cout << argv[5]<<": "<< argv[6]<<endl;
-	cout << argv[7]<<": "<< argv[8]<<endl;
-	
-	if (!cap[0].open(argv[2])) return false;
-	if (!cap[1].open(argv[4])) return false;
-	
-	if (!cap[0].isOpened()) {
-		cout << "WRONG PATH -rightVideo:"<< argv[2]<<endl;
-		return false;
-    }
-	if (!cap[0].isOpened()) {
-		cout << "WRONG PATH -topVideo:"<< argv[4]<<endl;
-		return false;
-    }
-	
-	
-	//READ PARAMETER FOR TRACKING
-	
-	//loading parameter from file
-	setSistemConfig(&param[0], argv[6]);
-	//deleting old video files
-	deleteOldVideo(param[0]);
-	//revisando parametros
-	if(!checkConfig(&param[0],true)){
-		cout << "WRONG PATH -configPathRV:"<< argv[6]<<endl;
-		return false;
-	}
-	
-	//loading parameter from file
-	setSistemConfig(&param[1], argv[8]);
-	//deleting old video files
-	deleteOldVideo(param[1]);
-	//revisando parametros
-	if(!checkConfig(&param[1],true)){
-		cout << "WRONG PATH -configPathTV:"<< argv[8]<<endl;
-		return false;
-	}
-	
-	cap[0].set(CV_CAP_PROP_POS_MSEC, param[0].startMsec); 
-	//cap[1].set(CV_CAP_PROP_POS_MSEC, atoi(argv[10]));
-	
-	return true;
-}
-*/
 
 bool readMainArgument(int argc, char * const argv[], VideoCapture cap[], config_SystemParameter param[]){
-	if (argc != 9) {
+	if (argc < 9 || argc > 10) {
 		cout << "WRONG ARGUMENT NUMBER";
 		return false;
 	}
 	
-	vector<bool> bool_param(argc,false);
+	param[0].debugMode = false;
+	param[1].debugMode = false;
 	
 	cout << "MAIN ARGUMENTS"<<endl;
 	for (int i=1; i<argc; i++) {
@@ -146,11 +76,15 @@ bool readMainArgument(int argc, char * const argv[], VideoCapture cap[], config_
 				return false;
 			}
 		}
+		else if(strcmp(argv[i],"-debug") == 0){
+			cout <<argv[i]<<": "<< argv[i+1]<<endl;
+			param[0].debugMode = true;
+			param[1].debugMode = true;
+		}
 
 	}
 
 	cap[0].set(CV_CAP_PROP_POS_MSEC, param[0].startMsec); 
-	//cap[1].set(CV_CAP_PROP_POS_MSEC, atoi(argv[10]));
 	
 	return true;
 }
@@ -196,7 +130,7 @@ int main (int argc, char * const argv[]){
 			rectSmall = scaleRect(param[i].initialRect, scaleFactor);
 		}
 		else {
-			param[i].initialRect = searchFace(OriginalFrame,TrackingModel_P,scaleFactor, false);
+			param[i].initialRect = searchFace(OriginalFrame,TrackingModel_P,scaleFactor, param[i].debugMode);
 			rectSmall = scaleRect(param[i].initialRect, scaleFactor);
 			//et_P->updateVariables(rectSmall);
 			//et_P->update(miniFrame);
@@ -207,7 +141,7 @@ int main (int argc, char * const argv[]){
 		
 		drawRotatedRect(DrawFrame, param[i].initialRect);
 		imshow(WINDOW_NAME,DrawFrame);
-		//cvWaitKey();
+		if(param[i].debugMode) cvWaitKey();
 		
 		TrackingModel_P = new CovariancePatchModelv2(miniFrame, rectSmall, &param[i]);
 		et_P = new ExhaustiveTracking(TrackingModel_P, miniFrame, &param[i]);

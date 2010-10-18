@@ -2,11 +2,22 @@ FaceTracker/README.txt
 2010-10-18, Pedro Cortez <pcortez@gmail.com>
 
 MAIN ARG
-el main tiene como input 4 parametros:
-1.- path al primer video a trackear
-2.- path al segundo video a trackear (cuando el objeto se sale del primer video continua en el segundo video)
-3.- path al archivo de config del primer video
-4.- path al archivo de config del segundo video
+el main tiene como input 5 parametros:
+
+-rightVideo   
+	arg:path al primer video a trackear (se parte por el de la c‡mara derecha)
+
+-topVideo
+	arg: path al segundo video a trackear (cuando el objeto se sale del primer video continua en el segundo video - es el video con la vista superior o top)
+
+-configPathRV
+	arg: path al archivo de config del primer video (rightVideo)
+
+-configPathTV
+	arg: path al archivo de config del segundo video (topVideo)
+
+-debug
+	no tiene argumento - se si se agrega, imprime informaci—n de debut y ademas hace cvWaiting() antes de partir cada video
 
 
 CONFIG FILES:
