@@ -82,11 +82,17 @@ bool readMainArgument(int argc, char * const argv[], VideoCapture cap[], config_
 			param[0].debugMode = true;
 			param[1].debugMode = true;
 		}
-
 	}
 	cout << "------------------------------------------------------"<<endl<<endl;
-	cap[0].set(CV_CAP_PROP_POS_MSEC, param[0].startMsec); 
 	
+	if(param[0].startMsec>0){
+		cap[0].set(CV_CAP_PROP_POS_MSEC, param[0].startMsec);
+		//cap[0].set(CV_CAP_PROP_POS_FRAMES, 1851-3);
+	}
+	else{
+		cap[0].set(CV_CAP_PROP_POS_FRAMES, 0);
+		param[0].startMsec = 0;
+	}
 	return true;
 }
 
@@ -119,6 +125,10 @@ int main (int argc, char * const argv[]){
 	VideoWriter video(param[0].videoPath+".avi",CV_FOURCC('D', 'I', 'V', 'X'), cap[0].get(CV_CAP_PROP_FPS) , OriginalFrame.size());
 	RotatedRect rectS,rectSmall;
 	
+	ofstream positionfile;
+	string pathPosition = param[0].videoPath.substr(0, param[0].videoPath.find_last_of("/")+1) +"position.txt"; 
+	positionfile.open (pathPosition.c_str(), ios::trunc);
+	
 	for (int i=0; i<2; i++) {
 		//ini variable
 		countRectOut = 0;
@@ -147,7 +157,7 @@ int main (int argc, char * const argv[]){
 		TrackingModel_P = new CovariancePatchModelv2(miniFrame, rectSmall, &param[i]);
 		et_P = new ExhaustiveTracking(TrackingModel_P, miniFrame, &param[i]);
 		
-		while (cap[i].get(CV_CAP_PROP_POS_MSEC)<=param[i].endMsec && cvWaitKey(1)!=27) {
+		while (/*cap[i].get(CV_CAP_PROP_POS_MSEC)<=param[i].endMsec && */cvWaitKey(1)!=27) {
 			double t = (double)getTickCount();
 
 			Mat auxPatch;
@@ -157,23 +167,26 @@ int main (int argc, char * const argv[]){
 			et_P->update(miniFrame);
 			double prob2 = et_P->getNextPosition(rectS, cap[i].get(CV_CAP_PROP_FPS));
 			
-			drawLimit(DrawFrame);
+			//drawLimit(DrawFrame);
 			
 			rectS = scaleRect(rectS, cv::Size2f(1/scaleFactor.width, 1/scaleFactor.height));
 			drawRotatedRect(DrawFrame, rectS,CV_RGB(0,255,0),2);
 			
 			//checking ini time queue
+			/*
 			if (!startTimerQueue) {
 				startTimerQueue = checkStartLimit(rectS, DrawFrame);
 				iniFrame = (startTimerQueue ? lastFrame : 1);
 			}
 			else {
 				drawTime(DrawFrame, calculateQueueTime(iniFrame, lastFrame, cap[i].get(CV_CAP_PROP_FPS)));
-			}
+			}*/
 			lastFrame++;
 			
 			t = ((double)getTickCount() - t)/getTickFrequency();
 			cout <<"Frame: "<<setw(3)<<cap[i].get(CV_CAP_PROP_POS_FRAMES)<< " Prob: "<<prob2<<" Time elaps: "<<t<<endl;
+			if((int)cap[i].get(CV_CAP_PROP_POS_FRAMES)%10==1 || lastFrame==2)
+				positionfile <<	cap[i].get(CV_CAP_PROP_POS_FRAMES)<<"	"<<floor(rectS.center.x)<<"	"<<floor(rectS.center.y)<<endl; 
 			
 			imshow(WINDOW_NAME,DrawFrame);
 			video<<DrawFrame;
@@ -211,7 +224,7 @@ int main (int argc, char * const argv[]){
 	myfile << calculateQueueTime(iniFrame, lastFrame,cap[0].get(CV_CAP_PROP_FPS))<< " seg"<<endl;
 	myfile <<"outTreshold: "<<outTreshold;
 	myfile.close();
-	
+	positionfile.close();
 	
 	cap[0].release();
 	cap[1].release();
