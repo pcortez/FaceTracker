@@ -59,5 +59,8 @@ RotatedRect searchFace(Mat& src, GenericModel *model, cv::Size2f scaleFactor, bo
 
 //se podria dejer como un int o unsigned int, pero la funcion opencv acepta doubles
 //como son milisegundos me aseguro tener un max value grande con el long
-double time2msec(const char _time[]);
+double time2msec(/*const char _time[]*/ string timeString);
+
+//Revisa si el char es un frame o tiempo en segundos minutos horas.
+bool isFrame(/*const char _time[]*/ string timeString);
 #endif

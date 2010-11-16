@@ -60,8 +60,11 @@ void setSistemConfig(config_SystemParameter *param, string fileParam){
 	getline(ss, angleVector);
 	
 	//Time range
-	param->startMsec = time2msec(time.substr(0,time.find(',')).c_str());
-	param->endMsec = time2msec(time.substr(time.find(',')+1).c_str());
+	param->startTimeOnFrames = isFrame(time.substr(0,time.find(',')));
+	param->endTimeOnFrames = isFrame(time.substr(time.find(',')+1));
+	
+	param->startTime = time2msec(time.substr(0,time.find(',')));
+	param->endTime = time2msec(time.substr(time.find(',')+1));
 	
 	//initialRect
 	centerS_x = centerS.substr(0,centerS.find(','));
@@ -160,7 +163,7 @@ bool checkConfig(config_SystemParameter *param, bool print){
 		cout << "BAD VALUE NORM TYPE PARAMETER"<<endl;
 		return false;
 	}
-	if(param->startMsec>=param->endMsec && param->endMsec<=0 && param->startMsec<=0){ 
+	if(param->startTime>=param->endTime && param->endTime<=0 && param->startTime<=0){ 
 		cout << "BAD VALUE NORM TYPE PARAMETER"<<endl;
 		return false;
 	}
@@ -168,8 +171,8 @@ bool checkConfig(config_SystemParameter *param, bool print){
 	
 	if(print){
 		cout << "SISTEM PARAMETER"<<endl;
-		cout << "Start Video msec: "<<param->startMsec<<endl;
-		cout << "End Video msec: "<<param->endMsec<<endl;
+		cout << "Start Video msec: "<<param->startTime<<endl;
+		cout << "End Video msec: "<<param->endTime<<endl;
 		cout << "Video Path: "<<param->videoPath<<endl;
 		cout << "Images Color: ";
 		if(param->isRGB) cout<<"RGB"<<endl;
@@ -647,9 +650,18 @@ RotatedRect searchFace(Mat& src, GenericModel *model, cv::Size2f scaleFactor, bo
 	return scaleRect(minRect, cv::Size2f(1/scaleFactor.width, 1/scaleFactor.height));	
 }
 
-double time2msec(const char _time[]){
+bool isFrame(string timeString){
+	if (timeString.find(":")==string::npos)
+		return true;
+	else
+		return false;
+}
+
+double time2msec(string timeString){
+	if (isFrame(timeString))
+		return atoi(timeString.c_str());
+	
 	string hrsSting = "0",minSting = "0",secSting = "0";
-	string timeString(_time);
 	
 	if(timeString.find_first_of(':')==timeString.find_last_of(':')){
 		minSting = timeString.substr(0,timeString.find_first_of(':'));
@@ -661,6 +673,6 @@ double time2msec(const char _time[]){
 									 timeString.find_last_of(':')-timeString.find_first_of(':')-1);
 		secSting = timeString.substr(timeString.find_last_of(':')+1);
 	}
-
+	
 	return atoi(hrsSting.c_str())*3600000+atoi(minSting.c_str())*60000+atof(secSting.c_str())*1000;
 }

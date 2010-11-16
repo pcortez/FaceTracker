@@ -34,8 +34,10 @@ struct config_SystemParameter {
 	Norm_SubWindows normType;
 	bool isRGB;
 	string videoPath;//incluey el nombre del video pero no el .formato
-	double startMsec;
-	double endMsec;
+	double startTime;
+	double endTime;
+	bool startTimeOnFrames;
+	bool endTimeOnFrames;
 	bool debugMode;
 };
 

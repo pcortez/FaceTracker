@@ -85,13 +85,15 @@ bool readMainArgument(int argc, char * const argv[], VideoCapture cap[], config_
 	}
 	cout << "------------------------------------------------------"<<endl<<endl;
 	
-	if(param[0].startMsec>0){
-		cap[0].set(CV_CAP_PROP_POS_MSEC, param[0].startMsec);
-		//cap[0].set(CV_CAP_PROP_POS_FRAMES, 1851-3);
+	if(param[0].startTime>0){
+		if (param[0].startTimeOnFrames)
+			cap[0].set(CV_CAP_PROP_POS_FRAMES, param[0].startTime-3);
+		else
+			cap[0].set(CV_CAP_PROP_POS_MSEC, param[0].startTime);
 	}
 	else{
 		cap[0].set(CV_CAP_PROP_POS_FRAMES, 0);
-		param[0].startMsec = 0;
+		param[0].startTime = 0;
 	}
 	return true;
 }

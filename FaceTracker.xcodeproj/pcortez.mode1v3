@@ -273,6 +273,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>22</integer>
 									<integer>2</integer>
 									<integer>0</integer>
 								</array>
@@ -327,7 +328,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>806E7F70129318C9005B0790</string>
+										<string>80695B901293268E00FB4A80</string>
 										<key>history</key>
 										<array>
 											<string>80E7BDC810C71BEF00D797A0</string>
@@ -360,13 +361,13 @@
 											<string>806DD95A128852F9007EE5E9</string>
 											<string>806DD95B128852F9007EE5E9</string>
 											<string>806DD95C128852F9007EE5E9</string>
-											<string>806DD95D128852F9007EE5E9</string>
-											<string>806DD95E128852F9007EE5E9</string>
 											<string>806DD95F128852F9007EE5E9</string>
 											<string>806DD960128852F9007EE5E9</string>
 											<string>806DD961128852F9007EE5E9</string>
 											<string>802E44AC128B092D003F92F4</string>
-											<string>80EEEAB2128D6C33000F65C2</string>
+											<string>80695B8D1293268E00FB4A80</string>
+											<string>80695B8E1293268E00FB4A80</string>
+											<string>80695B8F1293268E00FB4A80</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -424,9 +425,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>806E7F6D129318C9005B0790</string>
+				<string>80695B84129325F000FB4A80</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>806E7F6E129318C9005B0790</string>
+				<string>80695B85129325F000FB4A80</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -564,6 +565,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>80695B981293268E00FB4A80</string>
+		<string>80695B991293268E00FB4A80</string>
+		<string>80695B9A1293268E00FB4A80</string>
+		<string>1C78EAAD065D492600B07095</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 		<string>8095CF2110BF23F000A0205F</string>
 		<string>/Users/pcortez/Documents/Magister/Codigo/FaceTracker/FaceTracker.xcodeproj</string>
 	</array>
@@ -645,7 +651,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>8095CF2110BF23F000A0205F</string>
-				<string>806E7F6F129318C9005B0790</string>
+				<string>80695B89129325F000FB4A80</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -767,13 +773,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>80EEEA94128D6A00000F65C2</string>
+				<string>80695B911293268E00FB4A80</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>80EEEA95128D6A00000F65C2</string>
-				<string>80EEEA96128D6A00000F65C2</string>
-				<string>80EEEA97128D6A00000F65C2</string>
-				<string>80EEEA98128D6A00000F65C2</string>
-				<string>80EEEA99128D6A00000F65C2</string>
+				<string>80695B921293268E00FB4A80</string>
+				<string>80695B931293268E00FB4A80</string>
+				<string>80695B941293268E00FB4A80</string>
+				<string>80695B951293268E00FB4A80</string>
+				<string>80695B961293268E00FB4A80</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -892,8 +898,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -929,7 +933,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>80EEEA9A128D6A00000F65C2</string>
+				<string>80695B971293268E00FB4A80</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
@@ -939,7 +943,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
