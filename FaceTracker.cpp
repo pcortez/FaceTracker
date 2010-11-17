@@ -54,7 +54,6 @@ bool readMainArgument(int argc, char * const argv[], frameObject cap[], config_S
 	param[0].debugMode = false;
 	param[1].debugMode = false;
 	
-	
 	cout << "MAIN ARGUMENTS"<<endl;
 	for (int i=1; i<argc; i++) {
 		
@@ -102,7 +101,6 @@ int queueTracking(frameObject cap[], config_SystemParameter param[]){
 	for (int i=0; i<2; i++) {
 		//ini variable
 		countRectOut = 0;
-		cap[i].grabNextFrame();
 		OriginalFrame = cap[i].getNextFrame();
 		DrawFrame = OriginalFrame.clone();
 		resize(OriginalFrame, miniFrame,cv::Size2i(widthSmall,heightSmall));
@@ -128,7 +126,7 @@ int queueTracking(frameObject cap[], config_SystemParameter param[]){
 		TrackingModel_P = new CovariancePatchModelv2(miniFrame, rectSmall, &param[i]);
 		et_P = new ExhaustiveTracking(TrackingModel_P, miniFrame, &param[i]);
 		
-		while (cap[i].grabNextFrame() && cvWaitKey(1)!=27) {
+		while (/*cap[i].grabNextFrame() && */cvWaitKey(1)!=27) {
 			double t = (double)getTickCount();
 			
 			Mat auxPatch;
@@ -171,10 +169,14 @@ int queueTracking(frameObject cap[], config_SystemParameter param[]){
 			}
 			else
 				countRectOut = (countRectOut==0?0:countRectOut-1);
+			
+			if(!cap[i].grabNextFrame()) break;
 		}
 		
-		if (i<1)
+		if (i<1){
 			cap[i+1].setSeeker(cap[i].getSeeker(), true);
+			cap[i+1].grabNextFrame();
+		}
 		
 		OriginalFrame.release();
 		miniFrame.release();
@@ -242,7 +244,7 @@ int compareTracking(frameObject cap[], config_SystemParameter param[]){
 	et_P = new ExhaustiveTracking(TrackingModel_P, miniFrame, &param[0]);
 	
 		
-	while (cap[0].grabNextFrame() && cvWaitKey(1)!=27) {
+	while (cvWaitKey(1)!=27) {
 		double t = (double)getTickCount();
 			
 		Mat auxPatch;
@@ -274,6 +276,7 @@ int compareTracking(frameObject cap[], config_SystemParameter param[]){
 		}
 		else
 			countRectOut = (countRectOut==0?0:countRectOut-1);
+		if(!cap[0].grabNextFrame()) break;
 	}
 	
 	OriginalFrame.release();

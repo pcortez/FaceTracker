@@ -72,8 +72,10 @@ bool frameObject::grabNextFrame(){
 	else{
 		if(indexFrame>=filesPath.size())
 			return false;
-		else
+		else{
+			indexFrame++;
 			return true;
+		}
 	}
 }
 
@@ -82,11 +84,13 @@ Mat frameObject::getNextFrame(){
 	if(this->isVideo)
 		this->video.retrieve(nextFrame);
 	else{
-		if (indexFrame>=filesPath.size())
+		if (indexFrame>=filesPath.size()){
+			cout << "INI FRAME EXCEDE NUM IMAGES"<<endl;
 			CV_Assert(false);
+		}
 		
 		nextFrame = imread(filesPath[indexFrame]);
-		indexFrame++;
+		
 	}
 	return nextFrame;
 }
@@ -94,13 +98,13 @@ Mat frameObject::getNextFrame(){
 void frameObject::setSeeker(double value, bool isFrame){
 	if(this->isVideo){
 		if(isFrame)
-			video.set(CV_CAP_PROP_POS_FRAMES, value-2);
+			video.set(CV_CAP_PROP_POS_FRAMES, value-1);
 		else
 			video.set(CV_CAP_PROP_POS_MSEC, value);
 	}
 	else{ 
 		if(isFrame)
-			video.set(CV_CAP_PROP_POS_FRAMES, value);
+			indexFrame = floor(value-1);
 		else{
 			cout << "IMAGE CANNOT USE MIN:SEC FORMAT: "<< value <<endl;
 			CV_Assert(false);
