@@ -12,14 +12,18 @@
 #include "Generic.h"
 #include "CondensationTracking.h"
 #include "TimeQueue.h"
+#include "frameObject.h"
 	
 const char  * WINDOW_NAME  = "Face Tracker";
 
 using namespace std;
 using namespace cv;
 
+const double widthSmall = 240;
+const double heightSmall = 180;
+const int outTreshold = 3;
 
-bool readMainArgument(int argc, char * const argv[], VideoCapture cap[], config_SystemParameter param[]){
+bool readMainArgument(int argc, char * const argv[], /*VideoCapture*/frameObject cap[], config_SystemParameter param[]){
 	if (argc < 9 || argc > 10) {
 		cout << "WRONG ARGUMENT NUMBER";
 		return false;
@@ -33,6 +37,7 @@ bool readMainArgument(int argc, char * const argv[], VideoCapture cap[], config_
 		
 		if(strcmp(argv[i],"-rightVideo") == 0){
 			cout <<argv[i]<<": "<< argv[i+1]<<endl;
+			/*
 			if (!cap[0].open(argv[i+1])){
 				cout << "WRONG FLAG -rightVideo: "<< argv[i+1] <<endl;
 				return false;
@@ -41,9 +46,12 @@ bool readMainArgument(int argc, char * const argv[], VideoCapture cap[], config_
 				cout << "WRONG PATH -rightVideo:"<< argv[i+1]<<endl;
 				return false;
 			}
+			*/
+			cap[0].iniCap(argv[i+1]);
 		}
 		else if(strcmp(argv[i],"-topVideo") == 0){
 			cout <<argv[i]<<": "<< argv[i+1]<<endl;
+			/*
 			if (!cap[1].open(argv[i+1])){
 				cout << "WRONG FLAG -configPathRV: "<< argv[i+1] <<endl;
 				return false;
@@ -52,6 +60,8 @@ bool readMainArgument(int argc, char * const argv[], VideoCapture cap[], config_
 				cout << "WRONG PATH -topVideo:"<< argv[i+1]<<endl;
 				return false;
 			}
+			 */
+			cap[1].iniCap(argv[i+1]);
 		}
 		else if(strcmp(argv[i],"-configPathRV") == 0){
 			cout <<argv[i]<<": "<< argv[i+1]<<endl;
@@ -86,34 +96,39 @@ bool readMainArgument(int argc, char * const argv[], VideoCapture cap[], config_
 	cout << "------------------------------------------------------"<<endl<<endl;
 	
 	if(param[0].startTime>0){
+		/*
 		if (param[0].startTimeOnFrames)
 			cap[0].set(CV_CAP_PROP_POS_FRAMES, param[0].startTime-3);
 		else
 			cap[0].set(CV_CAP_PROP_POS_MSEC, param[0].startTime);
+		 */
+		cap[0].setSeeker(param[0].startTime, param[0].startTimeOnFrames);
 	}
 	else{
+		/*
 		cap[0].set(CV_CAP_PROP_POS_FRAMES, 0);
 		param[0].startTime = 0;
+		 */
+		cap[0].setSeeker(0, true);
 	}
 	return true;
 }
 
+
 int main (int argc, char * const argv[]){
 	
 	Mat OriginalFrame,DrawFrame,miniFrame;
-    VideoCapture cap[2];
+    //VideoCapture cap[2];
+	frameObject cap[2];
 	config_SystemParameter param[2];	
 	
     if (!readMainArgument(argc, argv, cap, param))
 		return 0;
 		
-	const double widthSmall = 240;
-	const double heightSmall = 180;
-	const int outTreshold = 3;
-	
     cvNamedWindow(WINDOW_NAME,CV_WINDOW_AUTOSIZE);
 	
-    cap[0] >> OriginalFrame;	
+    //cap[0] >> OriginalFrame;
+	OriginalFrame = cap[0].getNextFrame();
 	CovariancePatchModelv2 *TrackingModel_P;
 	ExhaustiveTracking *et_P;
 
@@ -124,7 +139,8 @@ int main (int argc, char * const argv[]){
 	//out box
 	int countRectOut = 0;
 	
-	VideoWriter video(param[0].videoPath+".avi",CV_FOURCC('D', 'I', 'V', 'X'), cap[0].get(CV_CAP_PROP_FPS) , OriginalFrame.size());
+	//VideoWriter video(param[0].videoPath+".avi",CV_FOURCC('D', 'I', 'V', 'X'), cap[0].get(CV_CAP_PROP_FPS) , OriginalFrame.size());
+	VideoWriter video(param[0].videoPath+".avi",CV_FOURCC('D', 'I', 'V', 'X'), cap[0].getFPS(), OriginalFrame.size());
 	RotatedRect rectS,rectSmall;
 	
 	ofstream positionfile;
@@ -134,7 +150,8 @@ int main (int argc, char * const argv[]){
 	for (int i=0; i<2; i++) {
 		//ini variable
 		countRectOut = 0;
-		cap[i] >> OriginalFrame;
+		//cap[i] >> OriginalFrame;
+		OriginalFrame = cap[i].getNextFrame();
 		DrawFrame = OriginalFrame.clone();
 		resize(OriginalFrame, miniFrame,cv::Size2i(widthSmall,heightSmall));
 		cv::Size2f scaleFactor(widthSmall/OriginalFrame.size().width,heightSmall/OriginalFrame.size().height);
@@ -163,12 +180,13 @@ int main (int argc, char * const argv[]){
 			double t = (double)getTickCount();
 
 			Mat auxPatch;
-			cap[i] >> OriginalFrame;
+			//cap[i] >> OriginalFrame;
+			OriginalFrame = cap[i].getNextFrame();
 			DrawFrame = OriginalFrame.clone();
 			resize(OriginalFrame, miniFrame,cv::Size2i(widthSmall,heightSmall));
 			et_P->update(miniFrame);
-			double prob2 = et_P->getNextPosition(rectS, cap[i].get(CV_CAP_PROP_FPS));
-			
+			//double prob2 = et_P->getNextPosition(rectS, cap[i].get(CV_CAP_PROP_FPS));
+			double prob2 = et_P->getNextPosition(rectS, cap[i].getFPS());
 			//drawLimit(DrawFrame);
 			
 			rectS = scaleRect(rectS, cv::Size2f(1/scaleFactor.width, 1/scaleFactor.height));
@@ -186,9 +204,9 @@ int main (int argc, char * const argv[]){
 			lastFrame++;
 			
 			t = ((double)getTickCount() - t)/getTickFrequency();
-			cout <<"Frame: "<<setw(3)<<cap[i].get(CV_CAP_PROP_POS_FRAMES)<< " Prob: "<<prob2<<" Time elaps: "<<t<<endl;
-			if((int)cap[i].get(CV_CAP_PROP_POS_FRAMES)%10==1 || lastFrame==2)
-				positionfile <<	cap[i].get(CV_CAP_PROP_POS_FRAMES)<<"	"<<floor(rectS.center.x)<<"	"<<floor(rectS.center.y)<<endl; 
+			cout <<"Frame: "<<setw(3)<<cap[i].getSeeker()<< " Prob: "<<prob2<<" Time elaps: "<<t<<endl;
+			if((int)cap[i].getSeeker()%10==1 || lastFrame==2)
+				positionfile <<	cap[i].getSeeker()<<"	"<<floor(rectS.center.x)<<"	"<<floor(rectS.center.y)<<endl; 
 			
 			imshow(WINDOW_NAME,DrawFrame);
 			video<<DrawFrame;
@@ -208,7 +226,8 @@ int main (int argc, char * const argv[]){
 		}
 		
 		if (i<1) {
-			cap[i+1].set(CV_CAP_PROP_POS_FRAMES,cap[i].get(CV_CAP_PROP_POS_FRAMES));
+			//cap[i+1].set(CV_CAP_PROP_POS_FRAMES,cap[i].get(CV_CAP_PROP_POS_FRAMES));
+			cap[i+1].setSeeker(cap[i].getSeeker(), true);
 		}
 		
 		OriginalFrame.release();
@@ -218,18 +237,21 @@ int main (int argc, char * const argv[]){
 		
 	}
 	
-	cout << "FINAL QUEUE WAITING TIME:" << calculateQueueTime(iniFrame, lastFrame,cap[0].get(CV_CAP_PROP_FPS))<< " seg"<< endl;
+	//cout << "FINAL QUEUE WAITING TIME:" << calculateQueueTime(iniFrame, lastFrame,cap[0].get(CV_CAP_PROP_FPS))<< " seg"<< endl;
+	cout << "FINAL QUEUE WAITING TIME:" << calculateQueueTime(iniFrame, lastFrame, cap[0].getSeeker())<< " seg"<< endl;
 	
 	ofstream myfile;
 	string path = param[0].videoPath.substr(0, param[0].videoPath.find_last_of("/")+1) +"final_queue_waiting_time.txt"; 
 	myfile.open (path.c_str(), ios::trunc);
-	myfile << calculateQueueTime(iniFrame, lastFrame,cap[0].get(CV_CAP_PROP_FPS))<< " seg"<<endl;
+	//myfile << calculateQueueTime(iniFrame, lastFrame,cap[0].get(CV_CAP_PROP_FPS))<< " seg"<<endl;
+	myfile << calculateQueueTime(iniFrame, lastFrame, cap[0].getSeeker())<< " seg"<<endl;
 	myfile <<"outTreshold: "<<outTreshold;
 	myfile.close();
 	positionfile.close();
 	
-	cap[0].release();
-	cap[1].release();
+	//cap[0].release();
+	//cap[1].release();
+	delete &cap[0],&cap[1];
 	cvDestroyWindow(WINDOW_NAME);
 	delete TrackingModel_P;
 	delete et_P;
