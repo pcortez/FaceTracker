@@ -21,10 +21,14 @@
 //arreglar las referencias
 #include "CovariancePatch.h"
 #include "Generic.h"
+#include "frameObject.h"
 
 
 void setSistemConfig(config_SystemParameter *param, string fileParam);
 bool checkConfig(config_SystemParameter *param, bool print);
+
+bool readConfigAppCompare(string _path, frameObject *cap, config_SystemParameter *param);
+bool readConfigAppQueue(string _path, frameObject cap[], config_SystemParameter param[]);
 
 void deleteOldVideo(config_SystemParameter param);
 

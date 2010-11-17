@@ -10,28 +10,30 @@
 #include "frameObject.h"
 
 frameObject::frameObject(string _path){
-	iniCap(_path);
+	if(!iniCap(_path)){
+		cout << "ERROR ON PATH LOADING VIDEO"<<endl;
+		CV_Assert(false);
+	}
 }
 
 frameObject::frameObject(){
 }
 
-frameObject::~frameObject(){
+void frameObject::release(){
 	video.release();
 	filesPath.clear();
 }
 
-void frameObject::iniCap(string _path){
+bool frameObject::iniCap(string _path){
 	if (_path[_path.length()-1]=='/' || _path[_path.length()-1]=='\\'){
 		indexFrame = 0;
 		this->isVideo = false;
 		
 		DIR *dp;
 		struct dirent *dirp;
-		if((dp = opendir(_path.c_str())) == NULL) {
-			cout << "Error: "<<_path<< endl;
-			CV_Assert(false);
-		}
+		if((dp = opendir(_path.c_str())) == NULL)
+			return false;
+		
 		
 		//READING IMAGE
 		while ((dirp = readdir(dp)) != NULL) {
@@ -54,22 +56,35 @@ void frameObject::iniCap(string _path){
 	}
 	else {
 		this->isVideo = true;
-		if (!this->video.open(_path)){
-			cout << "WRONG FLAG -configPathRV: "<< _path <<endl;
-			CV_Assert(false);
-		}
-		if (!this->video.isOpened()) {
-			cout << "WRONG PATH -topVideo:"<< _path <<endl;
-			CV_Assert(false);
-		}
+		if (!this->video.open(_path))
+			return false;
+		if (!this->video.isOpened())
+			return false;
+		
+	}
+	
+	return true;
+}
+
+bool frameObject::grabNextFrame(){
+	if(this->isVideo)
+		return this->video.grab();
+	else{
+		if(indexFrame>=filesPath.size())
+			return false;
+		else
+			return true;
 	}
 }
 
 Mat frameObject::getNextFrame(){
 	Mat nextFrame;
 	if(this->isVideo)
-		this->video>> nextFrame;
-	else{ 
+		this->video.retrieve(nextFrame);
+	else{
+		if (indexFrame>=filesPath.size())
+			CV_Assert(false);
+		
 		nextFrame = imread(filesPath[indexFrame]);
 		indexFrame++;
 	}
@@ -79,7 +94,7 @@ Mat frameObject::getNextFrame(){
 void frameObject::setSeeker(double value, bool isFrame){
 	if(this->isVideo){
 		if(isFrame)
-			video.set(CV_CAP_PROP_POS_FRAMES, value-3);
+			video.set(CV_CAP_PROP_POS_FRAMES, value-2);
 		else
 			video.set(CV_CAP_PROP_POS_MSEC, value);
 	}

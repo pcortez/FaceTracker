@@ -2,23 +2,22 @@ FaceTracker/README.txt
 2010-10-18, Pedro Cortez <pcortez@gmail.com>
 
 MAIN ARG
-el main tiene como input 5 parametros:
+el main tiene como input 2 parametros:
 
--rightVideo   
-	arg:path al primer video a trackear (se parte por el de la camara derecha)
+-queue o -compare   
+	sin argumento: -compare es para hacer tracking con 1 solo video y comparar. -queue es para hacer tracking en dos videos y calcular tiempos de  espera.
 
--topVideo
-	arg: path al segundo video a trackear (cuando el objeto se sale del primer video continua en el segundo video - es el video con la vista superior o top)
-
--configPathRV
-	arg: path al archivo de config del primer video (rightVideo)
-
--configPathTV
-	arg: path al archivo de config del segundo video (topVideo)
-
--debug
-	no tiene argumento - se si se agrega, imprime informacion de debug y ademas hace cvWaiting() antes de partir cada video
-
+-configPath
+	arg: es el path para el archivo de configuraci—n de la aplicacion- para el caso de -compare el formato es:
+	-pathVideo.
+	-pathConfig (la siguiente explicaci—n).
+	-debug mode (0 o 1)
+para el caso de -queje el formato es:
+	-pathVideo1.
+	-pathVideo2.
+	-pathConfig_video1 (la siguiente explicaci—n).
+	-pathConfig_video2 (la siguiente explicaci—n).
+	-debug mode (0 o 1)
 
 CONFIG FILES:
 el orden de los archivos config

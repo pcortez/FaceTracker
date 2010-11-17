@@ -23,13 +23,14 @@ public:
 	frameObject();
 	frameObject(string _path);
 	
-	~frameObject();
-	void iniCap(string _path);
+	void release();
+	bool iniCap(string _path);
 	
 	Mat getNextFrame();
 	void setSeeker(double value, bool isFrame);
 	int getSeeker();
 	double getFPS();
+	bool grabNextFrame();
 
 private:
 	

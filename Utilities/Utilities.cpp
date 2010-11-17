@@ -28,6 +28,10 @@ void setSistemConfig(config_SystemParameter *param, string fileParam){
 	
 	ifstream is;
 	is.open (fileParam.c_str(), ios::binary );
+	if(!is.is_open()){
+		cout << "ERROR OPEN CONFIG VIDEO FILE"<<endl;
+		CV_Assert(false);
+	}
 	
 	// get length of file:
 	is.seekg (0, ios::end);
@@ -203,6 +207,142 @@ bool checkConfig(config_SystemParameter *param, bool print){
 	
 	return true;
 }
+
+bool readConfigAppCompare(string _path, frameObject *cap, config_SystemParameter *param){
+	//READING THE PATCH'S POSITION
+	int length;
+	char *buffer;
+	
+	ifstream is;
+	is.open (_path.c_str(), ios::binary );
+	if(!is.is_open()){
+		cout << "ERROR OPEN CONFIG VIDEO FILE: "<<_path<<endl;
+		return false;
+	}
+	
+	// get length of file:
+	is.seekg (0, ios::end);
+	length = is.tellg();
+	is.seekg (0, ios::beg);
+	// allocate memory:
+	buffer = new char [length];
+	// read data as a block:
+	is.read (buffer,length);
+	
+	string content(buffer,length);
+	stringstream ss(content);
+	
+	string debug, videoPath, videoConfig;
+	
+	getline(ss, videoPath);
+	getline(ss, videoConfig);
+	getline(ss, debug);
+	
+	if(!cap->iniCap(videoPath)){
+		cout << "WRONG PATH video: "<< videoPath <<endl;
+		return false;
+	}
+	cout <<"VIDEO PATH: "<<videoPath<<endl;
+	
+	//loading parameter from file
+	setSistemConfig(param, videoConfig);
+	//deleting old video files
+	deleteOldVideo(*param);
+	//revisando parametros
+	if(!checkConfig(param,true)){
+		cout << "WRONG PATH videoConfig:"<< videoConfig<<endl;
+		return false;
+	}
+	cout <<"VIDEO CONFIG PATH: "<<videoConfig<<endl;
+	
+	if (!debug.compare("1")) param->debugMode = true;
+	else if(!debug.compare("0")) param->debugMode = false;
+	else {
+		cout << "INVALID DEBUG VALUE: "<<debug<<endl;
+		return false;
+	}
+	return true;
+}
+bool readConfigAppQueue(string _path, frameObject cap[], config_SystemParameter param[]){
+	//READING THE PATCH'S POSITION
+	int length;
+	char *buffer;
+	
+	ifstream is;
+	is.open (_path.c_str(), ios::binary );
+	if(!is.is_open()){
+		cout << "ERROR OPEN CONFIG VIDEO FILE: "<<_path<<endl;
+		return false;
+	}
+	
+	// get length of file:
+	is.seekg (0, ios::end);
+	length = is.tellg();
+	is.seekg (0, ios::beg);
+	// allocate memory:
+	buffer = new char [length];
+	// read data as a block:
+	is.read (buffer,length);
+	
+	string content(buffer,length);
+	stringstream ss(content);
+	
+	string debug, videoPath_L, videoConfig_L, videoPath_T, videoConfig_T;
+	
+	getline(ss, videoPath_L);
+	getline(ss, videoPath_T);
+	getline(ss, videoConfig_L);
+	getline(ss, videoConfig_T);
+	getline(ss, debug);
+	
+	if(!cap[0].iniCap(videoPath_L)){
+		cout << "WRONG LATERAL PATH video: "<< videoPath_L <<endl;
+		return false;
+	}
+	cout <<"VIDEO LATERAL PATH: "<<videoPath_L<<endl;
+	
+	if(!cap[1].iniCap(videoPath_T)){
+		cout << "WRONG TOP PATH video: "<< videoPath_T<<endl;
+		return false;
+	}
+	cout <<"VIDEO TOP PATH: "<<videoPath_T<<endl;
+	
+	
+	//loading parameter from file
+	setSistemConfig(&param[0], videoConfig_L);
+	setSistemConfig(&param[1], videoConfig_T);
+	//deleting old video files
+	deleteOldVideo(param[0]);
+	deleteOldVideo(param[1]);
+	//revisando parametros
+	if(!checkConfig(&param[0],true)){
+		cout << "WRONG LATERAL PATH videoConfig:"<< videoConfig_L<<endl;
+		return false;
+	}
+	cout <<"VIDEO LATERAL CONFIG PATH: "<<videoConfig_L<<endl;
+	
+	if(!checkConfig(&param[1],true)){
+		cout << "WRONG LATERAL PATH videoConfig:"<< videoConfig_T<<endl;
+		return false;
+	}
+	cout <<"VIDEO LATERAL CONFIG PATH: "<<videoConfig_T<<endl;
+	
+	
+	if (!debug.compare("1")){
+		param[0].debugMode = true;
+		param[1].debugMode = true;
+	}
+	else if(!debug.compare("0")){
+		param[0].debugMode = false;
+		param[1].debugMode = false;
+	}
+	else {
+		cout << "INVALID DEBUG VALUE: "<<debug<<endl;
+		return false;
+	}
+	return true;
+}
+
 
 void deleteOldVideo(config_SystemParameter param){
 	//borrando archivo video.avi para no crear archivo
