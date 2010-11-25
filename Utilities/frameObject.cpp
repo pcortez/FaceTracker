@@ -67,8 +67,14 @@ bool frameObject::iniCap(string _path){
 }
 
 bool frameObject::grabNextFrame(){
-	if(this->isVideo)
-		return this->video.grab();
+	if(this->isVideo){
+		if(this->video.get(CV_CAP_PROP_FRAME_COUNT)>=this->video.get(CV_CAP_PROP_POS_FRAMES)){
+			this->video.grab();
+			return true;
+		}
+		else 
+			return false;
+	}
 	else{
 		if(indexFrame>=filesPath.size())
 			return false;

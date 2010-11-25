@@ -32,6 +32,7 @@ bool readConfigAppQueue(string _path, frameObject cap[], config_SystemParameter 
 
 void deleteOldVideo(config_SystemParameter param);
 
+vector< vector<RotatedRect> > loadAlgorithmCompare(string dir, vector<CvScalar> *colorLine, vector<string> *texts);
 vector<RotatedRect> getComparison(string dir);
 
 RotatedRect doRect(double *conf, const double scale, const RotatedRect rect);
@@ -44,7 +45,7 @@ void printMat(const vector<Mat>& src, int flag);
 
 void drawRotatedRect(Mat& img, const RotatedRect& rect, CvScalar color = cvScalar(0,255,0), int thickness = 2);
 
-void drawLegend(vector<string> texts, vector<CvScalar> colorLine, Mat& img);
+void drawLegend(vector<string> texts, vector<CvScalar> colorLine, Mat& img, vector< vector<RotatedRect> > rects, int ind);
 
 RotatedRect scaleRect(const RotatedRect rect, const double scale);
 RotatedRect scaleRect(const RotatedRect rect, const cv::Size2f scale);

@@ -226,7 +226,8 @@ int compareTracking(frameObject cap[], config_SystemParameter param[]){
 	vector<string> texts;
 	texts.push_back("ONBNN");
 	colorLine.push_back(CV_RGB(0,255,0));
-	
+	vector< vector<RotatedRect> > algorithmComp = loadAlgorithmCompare(param[0].videoPath.substr(0, param[0].videoPath.find_last_of("/"))
+																	   , &colorLine, &texts);
 	//ini variable
 	countRectOut = 0;
 	OriginalFrame = cap[0].getNextFrame();
@@ -243,7 +244,6 @@ int compareTracking(frameObject cap[], config_SystemParameter param[]){
 	TrackingModel_P = new CovariancePatchModelv2(miniFrame, rectSmall, &param[0]);
 	et_P = new ExhaustiveTracking(TrackingModel_P, miniFrame, &param[0]);
 	
-		
 	while (cvWaitKey(1)!=27) {
 		double t = (double)getTickCount();
 			
@@ -256,26 +256,16 @@ int compareTracking(frameObject cap[], config_SystemParameter param[]){
 			
 		rectS = scaleRect(rectS, cv::Size2f(1/scaleFactor.width, 1/scaleFactor.height));
 		drawRotatedRect(DrawFrame, rectS,CV_RGB(0,255,0),2);
-		drawLegend(texts, colorLine, DrawFrame);
+		drawLegend(texts, colorLine, DrawFrame, algorithmComp, cap[0].getSeeker());
 			
 		t = ((double)getTickCount() - t)/getTickFrequency();
 		cout <<"Frame: "<<setw(3)<<cap[0].getSeeker()<< " Prob: "<<prob2<<" Time elaps: "<<t<<endl;
-		if((int)cap[0].getSeeker()%10==1 /*|| lastFrame==2*/)
+		//if((int)cap[0].getSeeker()%10==1 /*|| lastFrame==2*/)
 			positionfile <<	cap[0].getSeeker()<<"	"<<floor(rectS.center.x)<<"	"<<floor(rectS.center.y)<<endl; 
 			
 		imshow(WINDOW_NAME,DrawFrame);
 		video<<DrawFrame;
 			
-		//checking out of image
-		if (rectS.center.x-rectS.size.width/2 <= 10){
-			countRectOut++;
-			if (countRectOut>outTreshold) {
-				cout << "OBJECT IS OUT OF VIDEO"<<endl;
-				break;
-			}
-		}
-		else
-			countRectOut = (countRectOut==0?0:countRectOut-1);
 		if(!cap[0].grabNextFrame()) break;
 	}
 	

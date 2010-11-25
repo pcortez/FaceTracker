@@ -352,25 +352,43 @@ void deleteOldVideo(config_SystemParameter param){
 		cout << "Archivo video.avi existia, fue eliminado"<<endl;
 }
 
+vector< vector<RotatedRect> > loadAlgorithmCompare(string dir, vector<CvScalar> *colorLine, vector<string> *texts){
+	vector< vector<RotatedRect> > rects;
+	DIR *dp;
+	struct dirent *dirp;
+	if((dp = opendir(dir.c_str())) == NULL)
+		return rects;
+	//READING IMAGE
+	while ((dirp = readdir(dp)) != NULL) {
+		size_t posTxt = string(dirp->d_name).find("algorithm");
+		if(posTxt!=string::npos){
+			string dirFull;
+			dirFull += dir;
+			dirFull += "/";
+			dirFull +=string(dirp->d_name);
+			
+			string name(dirp->d_name);
+			texts->push_back(name.substr(name.find_first_of("_")+1,name.find_first_of("-")-name.find_first_of("_")-1));
+			colorLine->push_back(CV_RGB(atoi(name.substr(name.find_first_of("-")+1,3).c_str()),
+										atoi(name.substr(name.find_first_of("-")+5,3).c_str()),
+										atoi(name.substr(name.find_first_of("-")+9,3).c_str())));
+			rects.push_back(getComparison(dirFull));
+		}
+	}
+	closedir(dp);
+	return rects;
+}
+
 vector<RotatedRect> getComparison(string dir){
 	
 	vector<RotatedRect> rect;
-	
-	DIR *dp;
-	//struct dirent *dirp;
-	if((dp = opendir(dir.c_str())) == NULL) {
-		cout << "Error" << endl;
-		CV_Assert(false);
-	}
 	
 	//READING THE PATCH'S POSITION
 	int length;
 	char * buffer;
 	
 	ifstream is;
-	string iniFile = dir+ "/comparisonCoord.txt";
-	
-	is.open (iniFile.c_str(), ios::binary );
+	is.open (dir.c_str(), ios::binary );
 	
 	// get length of file:
 	is.seekg (0, ios::end);
@@ -403,13 +421,10 @@ vector<RotatedRect> getComparison(string dir){
 	}
 	is.close();
 	delete[] buffer;
-	
-
-	
 	return rect;
 }
 
-void drawLegend(vector<string> texts, vector<CvScalar> colorLine, Mat& img){
+void drawLegend(vector<string> texts, vector<CvScalar> colorLine, Mat& img, vector< vector<RotatedRect> > rects, int ind){
 	
 	int fontFace = FONT_HERSHEY_SIMPLEX;
 	double fontScale = 0.5;
@@ -442,6 +457,15 @@ void drawLegend(vector<string> texts, vector<CvScalar> colorLine, Mat& img){
 		putText(img, texts[i], textOrg, fontFace, fontScale, Scalar::all(0), thickness, 8);
 		prevTextHeight += textSize.height+3;
 	}
+	
+	//draw algorithm
+	for (int i=0; i<rects.size(); i++) {
+		if (ind>=rects[i].size())
+			drawRotatedRect(img, rects[i][rects[i].size()-1],colorLine[i+1],1);
+		else
+			drawRotatedRect(img, rects[i][ind],colorLine[i+1],1);
+	}
+	
 	
 }
 
